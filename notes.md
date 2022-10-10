@@ -4,4 +4,7 @@ dotnet --version
 <!-- новое консольное приложение -->
 dotnet new console
 
+<!-- скомпилировать приложение (будет в папке bin) -->
+dotnet build
+
 
