@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\bin\Debug\net6.0\dotnet001CsHelloWorld.exe
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\bin\Debug\net6.0\dotnet001CsHelloWorld.deps.json
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\bin\Debug\net6.0\dotnet001CsHelloWorld.runtimeconfig.json
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\bin\Debug\net6.0\dotnet001CsHelloWorld.dll
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\bin\Debug\net6.0\dotnet001CsHelloWorld.pdb
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.AssemblyInfo.cs
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.dll
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\refint\dotnet001CsHelloWorld.dll
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.pdb
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\dotnet001CsHelloWorld.genruntimeconfig.cache
+C:\Workspace\dotnetcore\dotnet001CsHelloWorld\obj\Debug\net6.0\ref\dotnet001CsHelloWorld.dll
