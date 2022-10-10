@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\dotnet002Fibonacci\bin\Debug\net6.0\1.exe
+C:\Workspace\dotnetcore\dotnet002Fibonacci\bin\Debug\net6.0\1.deps.json
+C:\Workspace\dotnetcore\dotnet002Fibonacci\bin\Debug\net6.0\1.runtimeconfig.json
+C:\Workspace\dotnetcore\dotnet002Fibonacci\bin\Debug\net6.0\1.dll
+C:\Workspace\dotnetcore\dotnet002Fibonacci\bin\Debug\net6.0\1.pdb
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.AssemblyInfo.cs
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.dll
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\refint\1.dll
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.pdb
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\1.genruntimeconfig.cache
+C:\Workspace\dotnetcore\dotnet002Fibonacci\obj\Debug\net6.0\ref\1.dll
