@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBookWeb", "BulkyBookWeb\BulkyBookWeb.csproj", "{02435E29-E5B0-43A5-85C2-ED32D93321A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBookWebMVC", "BulkyBookWebMVC\BulkyBookWebMVC.csproj", "{9E9B1FC4-544D-42B9-9A45-7F9C2F9B022B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{02435E29-E5B0-43A5-85C2-ED32D93321A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02435E29-E5B0-43A5-85C2-ED32D93321A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02435E29-E5B0-43A5-85C2-ED32D93321A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E9B1FC4-544D-42B9-9A45-7F9C2F9B022B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9B1FC4-544D-42B9-9A45-7F9C2F9B022B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9B1FC4-544D-42B9-9A45-7F9C2F9B022B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9B1FC4-544D-42B9-9A45-7F9C2F9B022B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
