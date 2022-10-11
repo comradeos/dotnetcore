@@ -7,6 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="be921755-5b5f-4002-b8c0-b79736f3916d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BulkyBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulkyBook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +19,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1abb2696c3e0194fd5bb62254c37a28878e46192b53fe8ad2df3f329e6f77ee/MvcServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f6f390bc246f43f64a19835b0d7e69c2d8f7cd17815f5fcbb145b665bab8/IActionResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6e1a12b5dd6b021c9e45dc9daae8ecf9118158b47d0b9c133f9c1310e368c5/ExceptionHandlerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b34cdea969917836c37b6dc15e916d3e5954856c12dd1caf3926e4a2a3a0dfe2/AuthorizationAppBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BulkyBookWeb/wwwroot/lib/jquery/dist/jquery.min.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -28,16 +36,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BulkyBookWeb">
     <configuration name="BulkyBookWeb" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BulkyBookWeb/BulkyBookWeb.csproj" />
@@ -78,7 +87,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665482347758</updated>
-      <workItem from="1665482350771" duration="2503000" />
+      <workItem from="1665482350771" duration="3237000" />
+      <workItem from="1665492312690" duration="1685000" />
     </task>
     <servers />
   </component>
