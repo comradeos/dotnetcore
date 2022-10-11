@@ -7,10 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be921755-5b5f-4002-b8c0-b79736f3916d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BulkyBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulkyBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +19,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f6f390bc246f43f64a19835b0d7e69c2d8f7cd17815f5fcbb145b665bab8/IActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6e1a12b5dd6b021c9e45dc9daae8ecf9118158b47d0b9c133f9c1310e368c5/ExceptionHandlerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b34cdea969917836c37b6dc15e916d3e5954856c12dd1caf3926e4a2a3a0dfe2/AuthorizationAppBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/faf4a4b37056302738a46865827c3d2d3b6b1b977603a3932b0cd749921118/Controller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BulkyBookWeb/wwwroot/lib/jquery/dist/jquery.min.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -88,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665482347758</updated>
       <workItem from="1665482350771" duration="3237000" />
-      <workItem from="1665492312690" duration="1685000" />
+      <workItem from="1665492312690" duration="2842000" />
     </task>
     <servers />
   </component>
