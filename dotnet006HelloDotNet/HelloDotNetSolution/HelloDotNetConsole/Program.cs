@@ -41,10 +41,10 @@ namespace HelloDotNetConsole
             Console.WriteLine("isHappy: " + isHappy);
 
 
-            int num_1 = 0, num_2 = 0;
-            num_1 = Convert.ToInt32(Console.ReadLine());
-            num_2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("num_1: " + num_1 + "\nnum_2: " + num_2);
+            int num4 = 0, num5 = 0;
+            num4 = Convert.ToInt32(Console.ReadLine());
+            num5 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("num4: " + num4 + "\nnum_2: " + num5);
             
             // Console.ReadKey(); // считать один символ
         }  
