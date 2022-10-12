@@ -1,5 +1,5 @@
 ﻿using System;
-using HelloDotNetConsole;
+using System.Text;
 
 namespace HelloDotNetConsole
 {
@@ -7,8 +7,11 @@ namespace HelloDotNetConsole
     {
         public static void Main()
         {
-            int number = 231;
-            Console.WriteLine(number);
+            Console.OutputEncoding = Encoding.UTF8; // кирилица в консоли
+            int num1 = -231; // и положительные и отрицательные
+            uint num2 = 231; // только положительные
+            byte num3 = 255; // только в диапазоне 0-255
+            Console.WriteLine("переменная" + number + ".");
             // Console.ReadKey(); // считать один символ
         }  
     }
