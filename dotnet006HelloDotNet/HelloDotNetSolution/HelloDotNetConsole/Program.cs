@@ -7,7 +7,8 @@ namespace HelloDotNetConsole
     {
         public static void Main()
         {
-            Console.WriteLine("123");
+            Console.WriteLine("Hello");
+            Console.ReadKey(); // считать один символ
         }  
     }
     
