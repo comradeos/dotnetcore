@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\bin\Debug\net6.0\HelloDotNetConsole.exe
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\bin\Debug\net6.0\HelloDotNetConsole.deps.json
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\bin\Debug\net6.0\HelloDotNetConsole.runtimeconfig.json
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\bin\Debug\net6.0\HelloDotNetConsole.dll
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\bin\Debug\net6.0\HelloDotNetConsole.pdb
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.AssemblyInfo.cs
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.dll
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\refint\HelloDotNetConsole.dll
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.pdb
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\HelloDotNetConsole.genruntimeconfig.cache
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\HelloDotNetConsole\obj\Debug\net6.0\ref\HelloDotNetConsole.dll
