@@ -46,7 +46,7 @@ namespace HelloDotNetConsole
             num5 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("num4: " + num4 + "\nnum_2: " + num5);
             
-            // Console.ReadKey(); // считать один символ //
+            // Console.ReadKey(); // считать один символ
         }  
     }
     
