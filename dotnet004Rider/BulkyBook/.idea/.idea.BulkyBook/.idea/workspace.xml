@@ -7,7 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be921755-5b5f-4002-b8c0-b79736f3916d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BulkyBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulkyBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.assets.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,9 @@
       <option name="presentableId" value="Default" />
       <updated>1665482347758</updated>
       <workItem from="1665482350771" duration="3237000" />
-      <workItem from="1665492312690" duration="2842000" />
+      <workItem from="1665492312690" duration="4333000" />
+      <workItem from="1665513935757" duration="23000" />
+      <workItem from="1665552337292" duration="1032000" />
     </task>
     <servers />
   </component>
