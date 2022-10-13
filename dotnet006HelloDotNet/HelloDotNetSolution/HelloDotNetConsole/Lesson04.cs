@@ -23,7 +23,11 @@ public static class Lesson04
         Console.WriteLine("a % b = " + (a % b));
 
         var num = 7.231f + 1f;
+        num = 2.5f;
+        
         var str = "hello";
+        str = "world!";
+            
         Console.WriteLine(num);
         Console.WriteLine(str);
 
