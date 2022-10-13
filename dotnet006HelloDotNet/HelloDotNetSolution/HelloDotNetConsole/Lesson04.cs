@@ -11,6 +11,16 @@ public static class Lesson04
         // var floatUserInput = float.Parse(Console.ReadLine() ?? string.Empty);
 
         // Console.WriteLine("doubleUserInput: " + doubleUserInput + ", floatUserInput: " + floatUserInput);
+
+        const float a = 21.23f;
+        const float b = 61.01f;
         
+        Console.WriteLine("a = " + a + "b = " + b);
+        Console.WriteLine("a + b = " + (a + b));
+        Console.WriteLine("a - b = " + (a - b));
+        Console.WriteLine("a * b = " + (a * b));
+        Console.WriteLine("a / b = " + (a / b));
+        Console.WriteLine("a % b = " + (a % b));
+
     }
 }
