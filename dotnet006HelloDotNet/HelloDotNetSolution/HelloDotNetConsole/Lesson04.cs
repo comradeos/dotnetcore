@@ -4,6 +4,6 @@ public class Lesson04
 {
     public static void run()
     {
-        Console.WriteLine("Hello from Lesson04.run()");
+        Console.WriteLine("HІІІІЫЫЫЫЫello from Lesson04.run()");
     }
 }
