@@ -1,6 +1,6 @@
 ﻿namespace HelloDotNetConsole;
 
-public class Lesson02
+public static class Lesson02
 {
     public static void Run()
     {
