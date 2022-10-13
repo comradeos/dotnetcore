@@ -2,7 +2,7 @@
 
 public class Lesson03
 {
-    public static void run()
+    public static void Run()
     {
         int num4 = 0, num5 = 0;
         num4 = Convert.ToInt32(Console.ReadLine());

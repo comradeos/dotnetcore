@@ -2,7 +2,7 @@
 
 public class Lesson02
 {
-    public static void run()
+    public static void Run()
     {
         float fnum = 3212.2142f;
         double dnum = 33231.3412;

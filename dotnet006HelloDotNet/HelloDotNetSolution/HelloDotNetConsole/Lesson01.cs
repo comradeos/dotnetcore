@@ -2,7 +2,7 @@
 
 public class Lesson01
 {
-    public static void run()
+    public static void Run()
     {
         // byte number = 10;
         // short number = 10;

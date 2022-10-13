@@ -2,8 +2,9 @@
 
 public class Lesson04
 {
-    public static void run()
+    public static void Run()
     {
-        Console.WriteLine("HІІІІЫЫЫЫЫello from Lesson04.run()");
+        float userInput;
+        
     }
 }
