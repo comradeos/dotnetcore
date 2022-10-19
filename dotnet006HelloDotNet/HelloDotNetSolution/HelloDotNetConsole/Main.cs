@@ -8,7 +8,8 @@ void Main()
     // L03Convert.Run();
     // L04Math.Run();
     // L05IfElse.Run();
-    L06SwitchCase.Run();
+    // L06SwitchCase.Run();
+    L07ForWhileDo.Run();
 }
 
 Main();
