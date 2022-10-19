@@ -7,7 +7,8 @@ void Main()
     // Lesson02.Run();
     // Lesson03.Run();
     // Lesson04.Run();
-    Lesson05.Run();
+    // Lesson05.Run();
+    Lesson06.Run();
 }
 
 Main();
