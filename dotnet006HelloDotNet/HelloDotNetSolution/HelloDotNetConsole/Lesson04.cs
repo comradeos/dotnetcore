@@ -33,8 +33,19 @@ public static class Lesson04
 
         var strFloatNum = "2.11";
         var strFloatNum2 = "3.22";
-        Console.WriteLine(">" + (2.31 + float.Parse(strFloatNum)).ToString("0.##")); // формат
-        Console.WriteLine(">" + (5.02 + Convert.ToDouble(strFloatNum2)));
+        Console.WriteLine("> " + (2.31 + float.Parse(strFloatNum)).ToString("0.##")); // формат
+        Console.WriteLine("> " + (5.02 + Convert.ToDouble(strFloatNum2)));
+        
+        Console.WriteLine("PI: " + Math.PI);
+        Console.WriteLine("ABS: " + Math.Abs(-231)); // число по модую
+        Console.WriteLine("Ceiling: " + Math.Ceiling(4.11)); // 5 округляет к большему
+        Console.WriteLine("Floor: " + Math.Floor(4.11)); // 4 оругляет к большему
+        Console.WriteLine("Round: " + Math.Round(4.56)); // 5 оругляет
+        Console.WriteLine("Round: " + Math.Round(4.36)); // 4 оругляет
+        
+        
+        
+        
 
     }
 }
