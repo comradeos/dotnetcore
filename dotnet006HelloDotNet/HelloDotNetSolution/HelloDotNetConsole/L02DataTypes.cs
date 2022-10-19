@@ -1,6 +1,6 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class Lesson02
+public static class L02DataTypes
 {
     public static void Run()
     {

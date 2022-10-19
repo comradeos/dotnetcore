@@ -1,6 +1,6 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class Lesson05
+public static class L05IfElse
 {
     public static void Run()
     {

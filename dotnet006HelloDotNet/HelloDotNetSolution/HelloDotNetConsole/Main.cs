@@ -3,12 +3,12 @@
 void Main()
 {
     Console.OutputEncoding = System.Text.Encoding.UTF8; // кирилица в консоли
-    // Lesson01.Run();
-    // Lesson02.Run();
-    // Lesson03.Run();
-    // Lesson04.Run();
-    // Lesson05.Run();
-    Lesson06.Run();
+    // L01HelloWorld.Run();
+    // L02DataTypes.Run();
+    // L03Convert.Run();
+    // L04Math.Run();
+    // L05IfElse.Run();
+    L06SwitchCase.Run();
 }
 
 Main();

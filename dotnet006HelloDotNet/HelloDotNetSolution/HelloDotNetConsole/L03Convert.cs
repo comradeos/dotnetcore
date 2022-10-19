@@ -1,6 +1,6 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class Lesson03
+public static class L03Convert
 {
     public static void Run()
     {

@@ -1,6 +1,6 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class Lesson04
+public static class L04Math
 {
     public static void Run()
     {

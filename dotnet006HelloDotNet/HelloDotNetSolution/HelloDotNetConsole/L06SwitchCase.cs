@@ -1,6 +1,6 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class Lesson06
+public static class L06SwitchCase
 {
     public static void Run()
     {
@@ -22,8 +22,6 @@ public static class Lesson06
             default:
                 Console.WriteLine("default");
                 break;
-                
-            
         }
     }
 }
