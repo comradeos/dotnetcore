@@ -4,7 +4,8 @@ public static class Lesson06
 {
     public static void Run()
     {
-        const int num = 231;
+        Console.Write("Input num: ");
+        var num = Convert.ToInt32(Console.ReadLine());
         
         switch (num)
         {
