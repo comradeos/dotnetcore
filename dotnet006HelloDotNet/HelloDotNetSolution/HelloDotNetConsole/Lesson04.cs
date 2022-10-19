@@ -46,8 +46,14 @@ public static class Lesson04
         Console.WriteLine("Min: " + Math.Min(1,2)); // 1
         Console.WriteLine("Max: " + Math.Max(1,2)); // 2
         Console.WriteLine("Pow: " + Math.Pow(5,3)); // 125 степень
-        
-        
+        Console.WriteLine();
+        Console.WriteLine();
+
+        return;
+        Console.WriteLine("Введите радиус круга: ");
+        var radius = Convert.ToDouble(Console.ReadLine());
+        var area = Math.PI * Math.Pow(radius, 2);
+        Console.WriteLine("Площадь круга с радиусом {0} равна {1}", radius, area);
 
     }
 }
