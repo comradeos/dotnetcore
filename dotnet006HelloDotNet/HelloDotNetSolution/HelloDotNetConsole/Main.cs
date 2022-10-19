@@ -9,7 +9,8 @@ void Main()
     // L04Math.Run();
     // L05IfElse.Run();
     // L06SwitchCase.Run();
-    L07ForWhileDo.Run();
+    // L07ForWhileDo.Run();
+    L08Arrays.Run();
 }
 
 Main();
