@@ -33,7 +33,7 @@ public static class Lesson04
 
         var strFloatNum = "2.11";
         var strFloatNum2 = "3.22";
-        Console.WriteLine(">" + (2.31 + float.Parse(strFloatNum)).ToString("0.##"));
+        Console.WriteLine(">" + (2.31 + float.Parse(strFloatNum)).ToString("0.##")); // формат
         Console.WriteLine(">" + (5.02 + Convert.ToDouble(strFloatNum2)));
 
     }
