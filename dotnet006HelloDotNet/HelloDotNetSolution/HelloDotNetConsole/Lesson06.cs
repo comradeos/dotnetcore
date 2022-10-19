@@ -4,7 +4,7 @@ public static class Lesson06
 {
     public static void Run()
     {
-        const int num = 1;
+        const int num = 231;
         
         switch (num)
         {
@@ -12,11 +12,11 @@ public static class Lesson06
                 Console.WriteLine(111);
                 break;
             case 2:
-                Console.WriteLine(111);
+                Console.WriteLine(222);
                 break;
             
             case 3:
-                Console.WriteLine(111);
+                Console.WriteLine(333);
                 break;
             default:
                 Console.WriteLine("default");
