@@ -43,7 +43,6 @@ public static class Lesson04
         Console.WriteLine("Round: " + Math.Round(4.56)); // 5 оругляет
         Console.WriteLine("Round: " + Math.Round(4.36)); // 4 оругляет
         
-        
         Console.WriteLine("Min: " + Math.Min(1,2)); // 1
         Console.WriteLine("Max: " + Math.Max(1,2)); // 2
         Console.WriteLine("Pow: " + Math.Pow(5,3)); // 125 степень
