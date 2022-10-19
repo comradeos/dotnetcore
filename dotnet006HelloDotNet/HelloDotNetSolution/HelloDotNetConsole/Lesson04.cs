@@ -49,13 +49,12 @@ public static class Lesson04
         Console.WriteLine();
         Console.WriteLine();
         
-        Console.WriteLine(">>> ");
+        // Console.WriteLine(">>> ");
+        // var var1 = Console.ReadLine();
+        // var var2 = Convert.ToInt64(var1);
+        // Console.WriteLine(var2.GetType());
+        // return;
         
-        var var1 = Console.ReadLine();
-        var var2 = Convert.ToInt64(var1);
-        Console.WriteLine(var2.GetType());
-        
-        return;
         Console.WriteLine("Введите радиус круга: ");
         var radius = Convert.ToDouble(Console.ReadLine());
         var area = Math.PI * Math.Pow(radius, 2);
