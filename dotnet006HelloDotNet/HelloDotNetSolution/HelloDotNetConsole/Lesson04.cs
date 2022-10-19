@@ -48,7 +48,13 @@ public static class Lesson04
         Console.WriteLine("Pow: " + Math.Pow(5,3)); // 125 степень
         Console.WriteLine();
         Console.WriteLine();
-
+        
+        Console.WriteLine(">>> ");
+        
+        var var1 = Console.ReadLine();
+        var var2 = Convert.ToInt64(var1);
+        Console.WriteLine(var2.GetType());
+        
         return;
         Console.WriteLine("Введите радиус круга: ");
         var radius = Convert.ToDouble(Console.ReadLine());
