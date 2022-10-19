@@ -21,6 +21,15 @@ public static class Lesson05
         const string result = isHappy ? "You are happy!" : "You are not happy...";
         Console.WriteLine(result);
         
+        const int num = 3;
         
+        if (num > 5)
+        {
+            Console.WriteLine(" > 5 ...");
+        } else if (num > 1)
+        {
+            Console.WriteLine(" > 1 ...");
+        }
+
     }
 }
