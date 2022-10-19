@@ -30,6 +30,20 @@ public static class Lesson05
         {
             Console.WriteLine(" > 1 ...");
         }
+        
+        const int num2 = 123;
+        if (num2 > 10 && num2 > 120)
+        {
+            Console.WriteLine(">>> " + num2); // >>> 123
+        }
+        
+        const int num3 = 1;
+        const int num4 = 50;
+        
+        if (num3 > 10 || num4 > 10)
+        {
+            Console.WriteLine(">>> " + num3 + " ... " + num4); // >>> 1 ... 50
+        }
 
     }
 }
