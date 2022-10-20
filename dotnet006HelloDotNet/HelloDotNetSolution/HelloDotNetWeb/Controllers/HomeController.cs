@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using HelloDotNetWeb.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HelloDotNetWeb.Controllers;
 

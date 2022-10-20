@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDotNetWeb", "HelloDotN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDotNetConsole", "HelloDotNetConsole\HelloDotNetConsole.csproj", "{A241740B-569F-41E3-99FD-405F046F1FF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFrameworkConsoleApp1", "NetFrameworkConsoleApp1\NetFrameworkConsoleApp1.csproj", "{AEA5A889-1A05-4597-8F4B-5492AF92381A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{A241740B-569F-41E3-99FD-405F046F1FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A241740B-569F-41E3-99FD-405F046F1FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A241740B-569F-41E3-99FD-405F046F1FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA5A889-1A05-4597-8F4B-5492AF92381A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA5A889-1A05-4597-8F4B-5492AF92381A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA5A889-1A05-4597-8F4B-5492AF92381A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA5A889-1A05-4597-8F4B-5492AF92381A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
