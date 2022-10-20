@@ -5,15 +5,17 @@ public static class L10FunctionsClassMethods
     /**
      * Чего-то там печатает
      */
-    public static void MyPublicStaticVoidFunction()
+    public static void Print(string word)
     {
-        Console.WriteLine("PrivateVoid");
+        Console.WriteLine(word);
     }
     
     
     public static void Run()
     {
-        MyPublicStaticVoidFunction();
+        Print("Hello");
+        Print("World");
+        Print("!");
     }
     
 }
