@@ -54,6 +54,33 @@ public static class L08Arrays
         {
             Console.WriteLine(item);
         }
-
+        
+        
+        Console.WriteLine("------------------------------------");
+        
+        // многомерные массивы
+        var charMatrix = new char[3,3]; // двумерный массив 3х3
+        charMatrix[0,0] = 'a';
+        Console.WriteLine(charMatrix[0,0]);
+        
+        // альтернативное создание 2 мерного массива
+        var charMatrix2 = new[,] {
+            {'a', 'b', 'c'},
+            {'d', 'e', 'f'},
+            {'g', 'h', 'i'},
+        };
+        
+        Console.WriteLine("------------------------------------");
+        Console.WriteLine(charMatrix.Length);
+        Console.WriteLine("------------------------------------");
+        
+        for (var i = 0; i < 3; i++)
+        {
+            for (var j = 0; j < 3; j++)
+            {
+                Console.WriteLine(charMatrix2[i,j]);
+            }
+        }
+        
     }
 }
