@@ -33,9 +33,10 @@ public static class L09ForeachGenerics
         {
             Console.WriteLine(num);
         }
+        
+        Tools.Line();
 
-
-        var numbers = new List<int>()
+        var numbers = new List<int>() // новый динамический массив с типом int
         {
             341, 23, 551,
         };  // динамический массив
@@ -44,10 +45,16 @@ public static class L09ForeachGenerics
         numbers.Add(777);
         numbers.Add(777);
 
+        numbers.Remove(777);
+        numbers.Sort();
+        numbers.Reverse();
+        // numbers.Clear();
+        
         foreach (var num in numbers)
         {
             Console.WriteLine(num);
         }
-
+    
+        
     }
 }
