@@ -1,0 +1,7 @@
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\NetFrameworkConsoleApp1\bin\Debug\NetFrameworkConsoleApp1.exe
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\NetFrameworkConsoleApp1\bin\Debug\NetFrameworkConsoleApp1.pdb
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\NetFrameworkConsoleApp1\obj\Debug\NetFrameworkConsoleApp1.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\NetFrameworkConsoleApp1\obj\Debug\NetFrameworkConsoleApp1.csproj.SuggestedBindingRedirects.cache
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\NetFrameworkConsoleApp1\obj\Debug\NetFrameworkConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\NetFrameworkConsoleApp1\obj\Debug\NetFrameworkConsoleApp1.exe
+C:\Workspace\dotnetcore\dotnet006HelloDotNet\HelloDotNetSolution\NetFrameworkConsoleApp1\obj\Debug\NetFrameworkConsoleApp1.pdb
