@@ -9,13 +9,12 @@ public static class L10FunctionsClassMethods
     {
         Console.WriteLine(word);
     }
-    
-    
+
+
     public static void Run()
     {
         Print("Hello");
         Print("World");
         Print("!");
     }
-    
 }

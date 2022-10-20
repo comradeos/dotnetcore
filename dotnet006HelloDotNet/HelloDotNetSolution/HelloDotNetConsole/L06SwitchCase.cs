@@ -6,7 +6,7 @@ public static class L06SwitchCase
     {
         Console.Write("Input num: ");
         var num = Convert.ToInt32(Console.ReadLine());
-        
+
         switch (num)
         {
             case 1:
@@ -15,7 +15,7 @@ public static class L06SwitchCase
             case 2:
                 Console.WriteLine(222);
                 break;
-            
+
             case 3:
                 Console.WriteLine(333);
                 break;

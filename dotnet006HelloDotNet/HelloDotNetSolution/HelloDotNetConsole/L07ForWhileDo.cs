@@ -4,10 +4,7 @@ public static class L07ForWhileDo
 {
     public static void Run()
     {
-        for (int i = 0; i <= 10; i++)
-        {
-            Console.Write(i + ", ");
-        }
+        for (var i = 0; i <= 10; i++) Console.Write(i + ", ");
 
 
         Console.WriteLine();

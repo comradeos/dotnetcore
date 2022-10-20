@@ -10,8 +10,8 @@ public static class L01HelloWorld
         var n = new int();
         n = 231231;
         Console.WriteLine(n);
-        
-        int num1 = -231; // и положительные и отрицательные
+
+        var num1 = -231; // и положительные и отрицательные
         uint num2 = 231; // только положительные
         byte num3 = 255; // только в диапазоне 0-255
 
