@@ -1,5 +1,8 @@
 ﻿namespace HelloDotNetConsole;
 using Tools = L00Tools;
+
+using System;
+using System.Data;
 using System.Data.SqlClient;
 
 public static class L11FilesStrings

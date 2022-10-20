@@ -1,9 +1,8 @@
-﻿using System.Text;
-using HelloDotNetConsole;
+﻿using HelloDotNetConsole;
 
 void Main()
 {
-    Console.OutputEncoding = Encoding.UTF8; // кирилица в консоли
+    Console.OutputEncoding = System.Text.Encoding.UTF8; // кирилица в консоли
     // L01HelloWorld.Run();
     // L02DataTypes.Run();
     // L03Convert.Run();
