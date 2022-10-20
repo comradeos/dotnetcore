@@ -31,5 +31,23 @@ public static class L08Arrays
             Console.WriteLine(words[i]);
         }
         
+        
+        Console.WriteLine("------------------------------------");
+        
+        // установка случайных чисел и их сумма
+        
+        var randNums = new short[10]; // новый массив типа int16
+        var random = new Random();  // объект генератора  
+        var sum = 0;
+        
+        for (var i = 0; i < randNums.Length; i++)
+        {
+            var t = random.Next(-15, 15);
+            randNums[i] = Convert.ToInt16(t);
+            sum += randNums[i];
+            Console.WriteLine(randNums[i] + " (sum = " + sum + ")");
+        }
+
+
     }
 }
