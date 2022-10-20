@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using HelloDotNetWeb.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
 
 namespace HelloDotNetWeb.Controllers;
 
@@ -15,6 +16,10 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=usersdb;Integrated Security=True";
+        // Создание подключения
+        // SqlConnection connection = new SqlConnection(connectionString);
+        
         return View();
     }
 
