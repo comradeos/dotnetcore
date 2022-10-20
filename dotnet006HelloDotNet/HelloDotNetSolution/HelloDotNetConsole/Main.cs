@@ -10,7 +10,8 @@ void Main()
     // L05IfElse.Run();
     // L06SwitchCase.Run();
     // L07ForWhileDo.Run();
-    L08Arrays.Run();
+    // L08Arrays.Run();
+    L09ForeachGenerics.Run();
 }
 
 Main();
