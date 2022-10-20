@@ -78,8 +78,9 @@ public static class L08Arrays
         {
             for (var j = 0; j < 3; j++)
             {
-                Console.WriteLine(charMatrix2[i,j]);
+                Console.Write(charMatrix2[i,j] + " ");
             }
+            Console.WriteLine();
         }
         
     }
