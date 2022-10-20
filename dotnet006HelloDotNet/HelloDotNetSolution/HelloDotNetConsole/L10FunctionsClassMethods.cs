@@ -15,4 +15,5 @@ public static class L10FunctionsClassMethods
     {
         MyPublicStaticVoidFunction();
     }
+    
 }
