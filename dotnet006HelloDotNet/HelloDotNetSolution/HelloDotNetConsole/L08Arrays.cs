@@ -26,9 +26,9 @@ public static class L08Arrays
 
         words[1] = "Walley";
         
-        for (var i = 0; i < words.Length; i++)
+        foreach (var t in words)
         {
-            Console.WriteLine(words[i]);
+            Console.WriteLine(t);
         }
         
         
@@ -47,7 +47,13 @@ public static class L08Arrays
             sum += randNums[i];
             Console.WriteLine(randNums[i] + " (sum = " + sum + ")");
         }
+        
+        Console.WriteLine("------------------------------------");
 
+        foreach (var item in randNums)
+        {
+            Console.WriteLine(item);
+        }
 
     }
 }
