@@ -11,7 +11,8 @@ void Main()
     // L06SwitchCase.Run();
     // L07ForWhileDo.Run();
     // L08Arrays.Run();
-    L09ForeachGenerics.Run();
+    // L09ForeachGenerics.Run();
+    L10FunctionsClassMethods.Run();
 }
 
 Main();
