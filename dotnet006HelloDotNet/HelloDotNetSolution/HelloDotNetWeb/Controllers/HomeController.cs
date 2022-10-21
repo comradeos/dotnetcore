@@ -18,7 +18,7 @@ public class HomeController : Controller
     {
         const string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=usersdb;Integrated Security=True";
         // Создание подключения
-        // SqlConnection connection = new SqlConnection(connectionString);
+        SqlConnection connection = new SqlConnection(connectionString);
         
         return View();
     }
