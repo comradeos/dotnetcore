@@ -16,7 +16,6 @@ public static class L10FunctionsClassMethods
         Print("Hello");
         Print("World");
         Print("!");
-        const string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=usersdb;Integrated Security=True";
         // Создание подключения
     }
 }
