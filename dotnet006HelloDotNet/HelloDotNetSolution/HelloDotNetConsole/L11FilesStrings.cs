@@ -34,8 +34,8 @@ public static class L11FilesStrings
             "world",
             "!",
         };
-        var newStr = string.Join(" ", array);
-        Console.WriteLine(newStr);
+        var newStr = string.Join(" ", array); // соединить массив в строку 
+        Console.WriteLine(newStr);  
 
 
 
