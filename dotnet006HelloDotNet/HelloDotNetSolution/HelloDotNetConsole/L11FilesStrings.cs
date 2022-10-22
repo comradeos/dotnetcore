@@ -22,7 +22,7 @@ public static class L11FilesStrings
         Console.WriteLine(string.CompareOrdinal("1", "11"));  // -49
 
         const string people = "Alex, Bob, John";
-        var names = people.Split(new char[] {','});
+        var names = people.Split(',');
         foreach (var item in names)
         {
             Console.WriteLine(item.Trim());  // убрать пробелы по бокам
