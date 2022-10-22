@@ -2,6 +2,7 @@
 using HelloDotNetWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace HelloDotNetWeb.Controllers;
 
@@ -18,7 +19,7 @@ public class HomeController : Controller
     {
         const string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=usersdb;Integrated Security=True";
         // Создание подключения
-        SqlConnection connection = new SqlConnection(connectionString);
+        var connection = new SqlConnection(connectionString);
         
         return View();
     }
