@@ -2,8 +2,6 @@
 using Tools = L00Tools;
 
 using System;
-using System.Data;
-using System.Data.SqlClient;
 
 public static class L11FilesStrings
 {
@@ -17,10 +15,18 @@ public static class L11FilesStrings
         Tools.Line();
         
         Console.WriteLine(string.Concat("Hello", "!!!")); // объединение строк
-        
 
         
-        
+        Console.WriteLine(string.CompareOrdinal("1", "1"));  // 0
+        Console.WriteLine(string.CompareOrdinal("11", "1"));  // 49 
+        Console.WriteLine(string.CompareOrdinal("1", "11"));  // -49
+
+        const string people = "Alex, Bob, John";
+        var names = people.Split(new char[] {','});
+        foreach (var item in names)
+        {
+            Console.WriteLine(item.Trim());  // убрать пробелы по бокам
+        }
     }
     
 }
