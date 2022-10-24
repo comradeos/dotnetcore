@@ -38,10 +38,10 @@ public static class L11FilesStrings
         var newStr = string.Join(" ", array); // соединить массив в строку 
         Console.WriteLine(newStr);  
 
-        Console.WriteLine("abcdef".Substring(2,1));
+        Console.WriteLine("abcdef".Substring(2,1)); // вывести один символ начиная с 2го
 
         Console.WriteLine("Введите текст: ");
-        var text = Console.ReadLine();
+        var text = Console.ReadLine();  // считать текст
         using (var stream = new FileStream("info.txt", FileMode.OpenOrCreate))
         {
             
