@@ -52,7 +52,11 @@ public static class L11FilesStrings
                 Console.WriteLine(i);
             }
         }
-        
+
+
+        using var stream1 = File.OpenRead("info.txt"); // создаем объект для чтения
+        var readArrays = new byte[stream1.Length]; // выделяем память под массив
+
     }
     
 }
