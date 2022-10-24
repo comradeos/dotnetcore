@@ -49,7 +49,7 @@ public static class L11FilesStrings
             stream.Write(bytesArray, 0, bytesArray.Length);
             foreach (var i in bytesArray)
             {
-                Console.WriteLine(bytesArray);
+                Console.WriteLine(i);
             }
         }
         
