@@ -2,6 +2,7 @@
 using Tools = L00Tools;
 
 using System;
+using System.IO;
 
 public static class L11FilesStrings
 {
@@ -39,6 +40,12 @@ public static class L11FilesStrings
 
         Console.WriteLine("abcdef".Substring(2,1));
 
+        Console.WriteLine("Введите текст: ");
+        var text = Console.ReadLine();
+        using (var stream = new FileStream("info.txt", FileMode.OpenOrCreate))
+        {
+            
+        }
     }
     
 }
