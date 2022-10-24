@@ -37,15 +37,22 @@ public static class L11FilesStrings
         };
         var newStr = string.Join(" ", array); // соединить массив в строку 
         Console.WriteLine(newStr);  
-
         Console.WriteLine("abcdef".Substring(2,1)); // вывести один символ начиная с 2го
 
+        
         Console.WriteLine("Введите текст: ");
-        var text = Console.ReadLine();  // считать текст
-        using (var stream = new FileStream("info.txt", FileMode.OpenOrCreate))
+        var text = Console.ReadLine();  // считать текст из консоли
+        using var stream = new FileStream("info.txt", FileMode.OpenOrCreate);
+        if (text != null) // проверка тект на не пустоту
         {
-            
+            var bytesArray = System.Text.Encoding.Default.GetBytes(text); // преобразовать текст в массив байтов
+            stream.Write(bytesArray, 0, bytesArray.Length);
+            foreach (var i in bytesArray)
+            {
+                Console.WriteLine(bytesArray);
+            }
         }
+        
     }
     
 }
