@@ -37,7 +37,7 @@ public static class L11FilesStrings
         var newStr = string.Join(" ", array); // соединить массив в строку 
         Console.WriteLine(newStr);  
 
-
+        Console.WriteLine("abcdef".Substring(2,1));
 
     }
     
