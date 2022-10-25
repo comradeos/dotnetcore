@@ -1,9 +1,7 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class L01HelloWorld
-{
-    public static void Run()
-    {
+public static class L01HelloWorld {
+    public static void Run() {
         // byte number = 10;
         // short number = 10;
         // long number = 10;

@@ -1,9 +1,7 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class L02DataTypes
-{
-    public static void Run()
-    {
+public static class L02DataTypes {
+    public static void Run() {
         var fnum = 3212.2142f;
         var dnum = 33231.3412;
         Console.WriteLine("переменная fnum: " + fnum);
