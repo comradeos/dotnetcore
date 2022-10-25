@@ -19,9 +19,15 @@ public static class L05IfElse {
 
         const int num = 3;
 
-        if (num > 5)
+        if (num > 5) {
             Console.WriteLine(" > 5 ...");
-        if (num > 1) Console.WriteLine(" > 1 ...");
+        }
+
+        if (num > 1) {
+            Console.WriteLine(" > 1 ...");
+        }
+
+        ;
 
         const int num2 = 123;
         if (num2 > 10 && num2 > 120) Console.WriteLine(">>> " + num2); // >>> 123
