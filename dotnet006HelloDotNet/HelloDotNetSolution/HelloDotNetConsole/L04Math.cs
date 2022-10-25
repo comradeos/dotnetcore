@@ -1,9 +1,7 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class L04Math
-{
-    public static void Run()
-    {
+public static class L04Math {
+    public static void Run() {
         // Console.Write("Input doubleUserInput: ");
         // var doubleUserInput = Convert.ToDouble(Console.ReadLine());
 

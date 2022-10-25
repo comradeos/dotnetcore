@@ -1,14 +1,12 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class L06SwitchCase
-{
-    public static void Run()
-    {
+public static class L06SwitchCase {
+    
+    public static void Run() {
         Console.Write("Input num: ");
         var num = Convert.ToInt32(Console.ReadLine());
 
-        switch (num)
-        {
+        switch (num) {
             case 1:
                 Console.WriteLine(111);
                 break;
@@ -24,4 +22,5 @@ public static class L06SwitchCase
                 break;
         }
     }
+    
 }

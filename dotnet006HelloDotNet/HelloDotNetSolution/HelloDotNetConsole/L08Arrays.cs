@@ -1,6 +1,7 @@
 ﻿namespace HelloDotNetConsole;
 
 public static class L08Arrays {
+    
     public static void Run() {
         var nums = new byte[5]; // var nums = new byte[5];
         nums[0] = 10;
@@ -64,5 +65,6 @@ public static class L08Arrays {
             for (var j = 0; j < 3; j++) Console.Write(charMatrix2[i, j] + " ");
             Console.WriteLine();
         }
+        
     }
 }

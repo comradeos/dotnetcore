@@ -1,18 +1,14 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class L05IfElse
-{
-    public static void Run()
-    {
+public static class L05IfElse {
+    public static void Run() {
         var word = "abc";
 
-        if (word.Length > 2)
-        {
+        if (word.Length > 2) {
             Console.WriteLine("cool: ");
             Console.WriteLine("word.Length > 2");
         }
-        else
-        {
+        else {
             Console.WriteLine("cool: ");
             Console.WriteLine("word.Length <2");
         }
