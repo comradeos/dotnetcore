@@ -2,20 +2,17 @@
 
 using Tools = L00Tools;
 
-public static class L09ForeachGenerics
-{
-    public static void Run()
-    {
-        short[] nums =
-        {
+public static class L09ForeachGenerics {
+    
+    public static void Run() {
+        short[] nums = {
             10, 15, 81, 94, 10
         }; // массив
 
         foreach (var num in nums) Console.WriteLine(num);
 
 
-        short[,] nums2 =
-        {
+        short[,] nums2 = {
             { 1, 2, 3 },
             { 4, 5, 6 },
             { 7, 8, 9 }
