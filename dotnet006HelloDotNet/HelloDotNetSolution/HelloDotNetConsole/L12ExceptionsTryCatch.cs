@@ -35,6 +35,9 @@ public static class L12ExceptionsTryCatch {
             Console.WriteLine("Был введен не тот формат");
             //throw; // завершить программу
         }
+        finally {
+            Console.WriteLine("Бло finally выполниться полюбому");
+        }
 
         Console.WriteLine(res);
     }
