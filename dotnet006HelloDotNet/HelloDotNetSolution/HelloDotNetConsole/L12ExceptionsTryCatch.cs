@@ -5,14 +5,6 @@ public static class L12ExceptionsTryCatch
 {
     public static void Run()
     {
-
-        var a = 1;
-        if (a != 23)
-        {
-            return;
-            throw new Exception("aaaaaaaaaa");
-        }
-        
         
         try
         {
