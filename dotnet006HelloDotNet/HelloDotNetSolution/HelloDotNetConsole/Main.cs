@@ -13,7 +13,8 @@ void Main()
     // L08Arrays.Run();
     // L09ForeachGenerics.Run();
     // L10FunctionsClassMethods.Run();
-    L11FilesStrings.Run();
+    // L11FilesStrings.Run();
+    L12ExceptionsTryCatch.Run();
 }
 
 Main();
