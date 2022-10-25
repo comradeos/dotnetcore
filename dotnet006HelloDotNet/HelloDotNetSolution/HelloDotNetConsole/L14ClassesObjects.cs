@@ -13,6 +13,6 @@ public static class L14ClassesObjects {
         bot1.coordinates = new[] {
             0, 0, 0,
         };
-        
+        Console.WriteLine(bot1.name +"\n"+ bot1.weight +"\n"+ bot1.coordinates);
     }
 }
