@@ -14,7 +14,7 @@ public static class L12ExceptionsTryCatch
         catch (FormatException)
         {
             Console.WriteLine("Был введен не тот формат!");
-            throw;
+            //throw; // завершить программу
         }
 
         Console.WriteLine(1);
