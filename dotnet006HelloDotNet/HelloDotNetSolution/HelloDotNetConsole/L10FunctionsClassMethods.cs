@@ -1,18 +1,15 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class L10FunctionsClassMethods
-{
+public static class L10FunctionsClassMethods {
     /**
      * Чего-то там печатает
      */
-    public static void Print(string word)
-    {
+    public static void Print(string word) {
         Console.WriteLine(word);
     }
 
 
-    public static void Run()
-    {
+    public static void Run() {
         Print("Hello");
         Print("World");
         Print("!");
