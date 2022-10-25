@@ -1,6 +1,6 @@
 ﻿namespace HelloDotNetConsole.L14Classes; 
 
-class RobotBase {
+public class RobotBase {
     private string _type;
     private string _model;
     
