@@ -5,7 +5,7 @@ public static class L12ExceptionsTryCatch
 {
     public static void Run()
     {
-        Console.WriteLine("L12ExceptionsTryCatch");
-        Tools.Line();
+        var num = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Converted to int32 = " + num);
     }
 }
