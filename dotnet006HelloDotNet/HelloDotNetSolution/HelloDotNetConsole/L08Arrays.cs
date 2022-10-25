@@ -1,9 +1,7 @@
 ﻿namespace HelloDotNetConsole;
 
-public static class L08Arrays
-{
-    public static void Run()
-    {
+public static class L08Arrays {
+    public static void Run() {
         var nums = new byte[5]; // var nums = new byte[5];
         nums[0] = 10;
         nums[1] = 25;
@@ -14,8 +12,7 @@ public static class L08Arrays
         Console.WriteLine(nums); // System.Byte[]
         for (var i = 0; i < nums.Length; i++) Console.WriteLine(nums[i]);
 
-        string[] words =
-        {
+        string[] words = {
             "Ann",
             "Bob",
             "Alex"
@@ -25,7 +22,6 @@ public static class L08Arrays
 
         foreach (var t in words) Console.WriteLine(t);
 
-
         Console.WriteLine("------------------------------------");
 
         // установка случайных чисел и их сумма
@@ -34,8 +30,7 @@ public static class L08Arrays
         var random = new Random(); // объект генератора  
         var sum = 0;
 
-        for (var i = 0; i < randNums.Length; i++)
-        {
+        for (var i = 0; i < randNums.Length; i++) {
             var t = random.Next(-15, 15);
             randNums[i] = Convert.ToInt16(t);
             sum += randNums[i];
@@ -55,8 +50,7 @@ public static class L08Arrays
         Console.WriteLine(charMatrix[0, 0]);
 
         // альтернативное создание 2 мерного массива
-        var charMatrix2 = new[,]
-        {
+        var charMatrix2 = new[,] {
             { 'a', 'b', 'c' },
             { 'd', 'e', 'f' },
             { 'g', 'h', 'i' }
@@ -66,8 +60,7 @@ public static class L08Arrays
         Console.WriteLine(charMatrix.Length);
         Console.WriteLine("------------------------------------");
 
-        for (var i = 0; i < 3; i++)
-        {
+        for (var i = 0; i < 3; i++) {
             for (var j = 0; j < 3; j++) Console.Write(charMatrix2[i, j] + " ");
             Console.WriteLine();
         }
