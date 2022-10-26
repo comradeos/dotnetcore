@@ -18,7 +18,8 @@ void Main() {
     // L14ClassesObjects.Run();
     // L15ConstructStatic.Run();
     // L16This.Run();
-    L17AccessorsGetSet.Run();
+    // L17AccessorsGetSet.Run();
+    L18Inheritance.Run();
 }
 
 Main();
