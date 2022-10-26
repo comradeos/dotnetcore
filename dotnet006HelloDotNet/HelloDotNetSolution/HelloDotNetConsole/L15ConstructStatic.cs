@@ -13,7 +13,12 @@ public class Robot {
         _weight = weight;
         _coordinates = coordinates;
         Console.WriteLine("Робот " + _name + " создан!");
-    }
+    }    
+    
+    /**
+     * Второй конструктор.
+     */
+    public Robot() {}
     
     /**
      * Установка новых значений для имени веса и координат.
@@ -48,7 +53,11 @@ public class Robot {
 
 public static class L15ConstructStatic {
     public static void Run() {
-        var bot = new Robot("B1", 512, new[] { 42, 12, 52, });
-        bot.PrintValues();
+        var abot = new Robot("AB1", 512, new[] { 42, 12, 52, });
+        abot.PrintValues();        
+        
+        var bbot = new Robot();
+        bbot.SetValues("BB1", 224, new [] { 9, 1, 4, });
+        bbot.PrintValues();
     }
 }
