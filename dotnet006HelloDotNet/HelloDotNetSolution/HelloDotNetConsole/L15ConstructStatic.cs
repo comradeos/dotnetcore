@@ -16,13 +16,21 @@ public class Robot {
         _weight = newWeight;
         _coordinates = newCoordinates;
     }
-    
-    
 
+    public void PrintValues() {
+        Console.WriteLine("Robot Info:");
+        Console.WriteLine("Name: " + _name);
+        Console.WriteLine("Weight: " + _weight + "kg.");
+        Console.WriteLine("Current coordinates:");
+        foreach (var i in _coordinates) {
+            Console.Write(i + ", ");
+        }
+    }
 }
 
 public static class L15ConstructStatic {
     public static void Run() {
-        
+        var bot = new Robot("B1", 512, new[] { 42, 12, 52, });
+        bot.PrintValues();
     }
 }
