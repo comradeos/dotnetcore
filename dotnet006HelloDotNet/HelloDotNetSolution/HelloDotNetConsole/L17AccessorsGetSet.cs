@@ -56,8 +56,6 @@ public static class L17AccessorsGetSet {
         
         var l17A1StrVal = l17A1._Strvalue;
         Console.WriteLine(">>> " + l17A1StrVal);
-        
-        
 
     }
 }
