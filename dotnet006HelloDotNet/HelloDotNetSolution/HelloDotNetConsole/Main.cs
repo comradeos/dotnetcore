@@ -15,7 +15,8 @@ void Main() {
     // L11FilesStrings.Run();
     // L12ExceptionsTryCatch.Run();
     // L13ObjectOrientedProgramming.Run();
-    L14ClassesObjects.Run();
+    // L14ClassesObjects.Run();
+    L15ConstructStatic.Run();
 }
 
 Main();
