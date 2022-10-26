@@ -12,5 +12,6 @@ public static class L00Tools {
         Console.WriteLine(value);
         Line();
         Console.WriteLine();
+        System.Environment.Exit(0);
     }
 }
