@@ -1,6 +1,8 @@
 ﻿namespace HelloDotNetConsole;
 
 public class Robot {
+    // https://metanit.com/sharp/tutorial/3.2.php модификаторы доступа
+    internal static string MyStaticValue = "";
     private string _name;
     private int _weight;
     private int[] _coordinates;
@@ -59,5 +61,8 @@ public static class L15ConstructStatic {
         var bbot = new Robot();
         bbot.SetValues("BB1", 224, new [] { 9, 1, 4, });
         bbot.PrintValues();
+
+        Robot.MyStaticValue = "STATIC";
+        Console.WriteLine(Robot.MyStaticValue);
     }
 }
