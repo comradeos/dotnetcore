@@ -9,10 +9,10 @@ public class Robot {
      * Конструктор для нового объекта.
      */
     public Robot(string name, int weight, int[] coordinates) {
-        Console.WriteLine("Робот " + _name + " создан!");
         _name = name;
         _weight = weight;
         _coordinates = coordinates;
+        Console.WriteLine("Робот " + _name + " создан!");
     }
     
     /**
@@ -23,16 +23,27 @@ public class Robot {
         _weight = newWeight;
         _coordinates = newCoordinates;
     }
-
+    
+    /**
+     * Вывод значений полей в терминал.
+     */
     public void PrintValues() {
         Console.WriteLine("Robot Info:");
         Console.WriteLine("Name: " + _name);
         Console.WriteLine("Weight: " + _weight + "kg.");
-        Console.WriteLine("Current coordinates:");
-        foreach (var i in _coordinates) {
-            Console.Write(i + ", ");
+        
+        Console.Write("Current coordinates: ");
+        for (var i = 0; i < _coordinates.Length; ++i) {
+            Console.Write(_coordinates[i]);
+            if (i < _coordinates.Length - 1) {
+                Console.Write(", ");
+            }
+            else {
+                Console.WriteLine();
+            }
         }
     }
+    
 }
 
 public static class L15ConstructStatic {
