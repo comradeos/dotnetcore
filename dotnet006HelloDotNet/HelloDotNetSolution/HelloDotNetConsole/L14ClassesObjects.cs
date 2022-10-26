@@ -8,7 +8,7 @@ public static class L14ClassesObjects {
         Tools.Line();
 
         var bot1 = new RobotBase();
-        bot1.SetValues("B1", 231, new int [] {
+        bot1.SetValues("B1", 231, new [] {
             4,1,2,
         });
         bot1.PrintValues();

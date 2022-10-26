@@ -1,9 +1,11 @@
 ﻿namespace HelloDotNetConsole.L14Classes;
 
 public class RobotBase {
-    private string _name;
-    private int _weight;
-    private int[] _coordinates;
+    private string _name = "";
+    private int _weight = 0;
+    private int[] _coordinates = new[] {
+        0, 0, 0
+    };
 
     public void SetValues(string name, int weight, int[] coordinates) {
         _name = name;
