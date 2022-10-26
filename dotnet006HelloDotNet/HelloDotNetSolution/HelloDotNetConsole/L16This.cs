@@ -14,7 +14,7 @@ public class L16A {
         this._strValue = strValue;
         this._numValue = numValue;
     }
-    public void GetValues(string strValue, int numValue) {
+    public void GetValues() {
         Console.WriteLine(this._strValue);
         Console.WriteLine(this._numValue);
     }
@@ -24,6 +24,7 @@ public class L16A {
 
 public static class L16This {
     public static void Run() {
-        
+        var l16A1 = new L16A("STR", 7);
+        l16A1.GetValues();
     }
 }
