@@ -2,7 +2,7 @@
 
 public class Robot {
     // https://metanit.com/sharp/tutorial/3.2.php модификаторы доступа
-    internal static string MyStaticValue = "";
+    private static int counter = 0;
     private string _name;
     private int _weight;
     private int[] _coordinates;
@@ -15,12 +15,15 @@ public class Robot {
         _weight = weight;
         _coordinates = coordinates;
         Console.WriteLine("Робот " + _name + " создан!");
-    }    
-    
+        ++counter;
+    }
+
     /**
      * Второй конструктор.
      */
-    public Robot() {}
+    public Robot() {
+        ++counter;
+    }
     
     /**
      * Установка новых значений для имени веса и координат.
@@ -51,6 +54,13 @@ public class Robot {
         }
     }
     
+    /**
+     * Отобразить количество созданных объектов. 
+     */
+    public static void PrintCounter() {
+        Console.WriteLine("Созданно роботов " + counter + " шт.");
+    }
+    
 }
 
 public static class L15ConstructStatic {
@@ -60,9 +70,10 @@ public static class L15ConstructStatic {
         
         var bbot = new Robot();
         bbot.SetValues("BB1", 224, new [] { 9, 1, 4, });
-        bbot.PrintValues();
+        bbot.PrintValues();        
+        
+        var сbot = new Robot();
 
-        Robot.MyStaticValue = "STATIC";
-        Console.WriteLine(Robot.MyStaticValue);
+        Robot.PrintCounter();
     }
 }
