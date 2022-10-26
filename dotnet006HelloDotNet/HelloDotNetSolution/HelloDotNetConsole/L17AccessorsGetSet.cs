@@ -18,7 +18,15 @@ public class L17A {
     }
 
     // возсожность получать но невозможность устанавливать вне класса
-    public string _Strvalue { get; private set; }
+    public string _Strvalue {
+        get {
+            return "aaaaa";
+        }
+        private set {
+            this._strValue = value;
+            Console.WriteLine("_strValue set");
+        }
+    }
 
 
     public L17A(string strValue, int numValue) {
@@ -45,6 +53,9 @@ public static class L17AccessorsGetSet {
                 
         l17A1._Numvalue = 434444;
         l17A1.PrintValues();
+        
+        var l17A1StrVal = l17A1._Strvalue;
+        Console.WriteLine(">>> " + l17A1StrVal);
         
         
 
