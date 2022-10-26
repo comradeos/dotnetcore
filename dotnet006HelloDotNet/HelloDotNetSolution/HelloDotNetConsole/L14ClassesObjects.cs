@@ -8,11 +8,7 @@ public static class L14ClassesObjects {
         Tools.Line();
 
         var bot1 = new RobotBase();
-        bot1.name = "MR1";
-        bot1.weight = 987;
-        bot1.coordinates = new[] {
-            0, 0, 0,
-        };
-        Console.WriteLine(bot1.name +"\n"+ bot1.weight +"\n"+ bot1.coordinates);
+        
+        
     }
 }
