@@ -29,6 +29,7 @@ public static class L23MethodOverload {
     public static void Run() {
         var c1 = new C23(5);
         c1.PrintNum();
+        
         var d1 = new D23(5);
         d1.PrintNum(313);
         d1.PrintNum();

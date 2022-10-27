@@ -24,7 +24,8 @@ void Main() {
     // L20VirtualMethods.Run();
     // L21AbstractClassesMethods.Run();
     // L22Interfaces.Run();
-    L23MethodOverload.Run();
+    // L23MethodOverload.Run();
+    L24Enums.Run();
 }
 
 Main();
