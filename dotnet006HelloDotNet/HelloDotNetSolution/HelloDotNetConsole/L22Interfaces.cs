@@ -26,6 +26,8 @@ public class B22 : A22, I22 {
     }
 }
 
+// ------------------------------------------------------------------------------
+
 public abstract class AMan {
     private string Name { set; get; }
     private int Age { set; get; }
@@ -38,7 +40,7 @@ public abstract class AMan {
     public abstract void SelfIntroduce();
 }
 
-public class CPerson : AMan {
+public class CPerson : AMan, IWalk, IRun {
     private string Name { set; get; }
     private int Age { set; get; }
 
@@ -50,7 +52,25 @@ public class CPerson : AMan {
     public override void SelfIntroduce() {
         Console.WriteLine("Hello, my name is " + this.Name + "\nI'm " + this.Age + " years old!");
     }
+
+    public void Walking() {
+        Console.WriteLine(this.Name + " is walking...");
+    }
+    
+    public void Running() {
+        Console.WriteLine(this.Name + " is running!!!");
+    }
 }
+
+public interface IWalk {
+    void Walking();
+}
+
+public interface IRun {
+    void Running();
+}
+
+// ------------------------------------------------------------------------------
 
 public static class L22Interfaces {
     public static void Run() {
@@ -61,5 +81,7 @@ public static class L22Interfaces {
         // b1.GetData();
         var c1 = new CPerson("NAME", 777);
         c1.SelfIntroduce();
+        c1.Walking();
+        c1.Running();
     }
 }
