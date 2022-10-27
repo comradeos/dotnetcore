@@ -19,6 +19,10 @@ public class D23 : C23 {
     public void PrintNum(int value) {
         Console.WriteLine(this.Num * value);
     }
+
+    public new void PrintNum() {
+        Console.WriteLine("AAAAAA " + this.Num);
+    }
 }
 
 public static class L23MethodOverload {
@@ -27,5 +31,6 @@ public static class L23MethodOverload {
         c1.PrintNum();
         var d1 = new D23(5);
         d1.PrintNum(313);
+        d1.PrintNum();
     }
 }
