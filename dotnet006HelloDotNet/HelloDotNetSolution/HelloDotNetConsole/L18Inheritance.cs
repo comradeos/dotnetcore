@@ -30,13 +30,13 @@ public class L18B : L18A {
     }
 }
 
-
 public class C18A {
     protected int _pnum;
 
     public void SetPNum(int value) {
         this._pnum = value;
     }
+
     public void PrintPNumA() {
         Console.WriteLine(this._pnum);
     }
@@ -47,7 +47,6 @@ public class C18B : C18A {
         Console.WriteLine(this._pnum);
     }
 }
-
 
 public static class L18Inheritance {
     public static void Run() {
