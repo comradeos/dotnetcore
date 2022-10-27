@@ -43,7 +43,6 @@ public abstract class AMan {
 public class CPerson : AMan, IWalk, IRun {
     private string Name { set; get; }
     private int Age { set; get; }
-
     public CPerson(string name, int age) : base(name, age) {
         this.Name = name;
         this.Age = age;
@@ -52,17 +51,20 @@ public class CPerson : AMan, IWalk, IRun {
     public override void SelfIntroduce() {
         Console.WriteLine("Hello, my name is " + this.Name + "\nI'm " + this.Age + " years old!");
     }
+    
+    public string state { set; get; }
 
     public void Walking() {
-        Console.WriteLine(this.Name + " is walking...");
+        Console.WriteLine(this.Name + " is walking... " + this.state);
     }
-    
+
     public void Running() {
-        Console.WriteLine(this.Name + " is running!!!");
+        Console.WriteLine(this.Name + " is running!!! " + this.state);
     }
 }
 
 public interface IWalk {
+    string state { set; get; }
     void Walking();
 }
 
@@ -81,6 +83,7 @@ public static class L22Interfaces {
         // b1.GetData();
         var c1 = new CPerson("NAME", 777);
         c1.SelfIntroduce();
+        c1.state = "super fast";
         c1.Walking();
         c1.Running();
     }
