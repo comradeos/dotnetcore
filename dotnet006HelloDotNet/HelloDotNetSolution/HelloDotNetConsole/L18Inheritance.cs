@@ -19,9 +19,14 @@ public class L18A {
     
 }
 
-
+public class L18B : L18A {
+    public L18B(int numValue) : base(numValue) {
+    }
+}
 
 public static class L18Inheritance {
     public static void Run() {
+        var l18a = new L18A(7);
+        var l18b = new L18B(8);
     }
 }
