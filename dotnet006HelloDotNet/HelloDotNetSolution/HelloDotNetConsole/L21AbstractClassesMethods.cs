@@ -15,10 +15,7 @@ public abstract class A21Abstract {
     public abstract void SetAge(int age);
     public abstract void PrintName();
     public abstract void PrintAge();
-
-    public void PrintData() {
-        Console.WriteLine("Name: " + this.Name + "\nAge: " + this.Age);
-    }
+    public abstract void PrintData();
 }
 
 public class A21 : A21Abstract {
@@ -39,6 +36,10 @@ public class A21 : A21Abstract {
 
     public override void PrintAge() {
         Console.WriteLine(this.Age);
+    }
+
+    public override void PrintData() {
+        Console.WriteLine("Name: " + this.Name + "\nAge: " + this.Age);
     }
 }
 
