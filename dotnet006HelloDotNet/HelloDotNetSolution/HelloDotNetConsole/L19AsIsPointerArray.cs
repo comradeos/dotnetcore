@@ -6,6 +6,11 @@ public class C191 {
 }
 
 
+public class C192:C191 {
+    public string word;
+}
+
+
 public static class L19AsIsPointerArray {
     public static void Run() {
         var c1911 = new C191() {
@@ -44,6 +49,16 @@ public static class L19AsIsPointerArray {
         strList.Add("ddd");
         Console.WriteLine(strList[3]);
         
+        Line();
         
+        // AS
+        var c1921 = new C192();
+        c1921.number = 231;
+        c1921.word = "word";
+        var obj = c1921 as C191; // использовать c1921 как єкземпляр C191
+
+
+
+
     }    
 }
