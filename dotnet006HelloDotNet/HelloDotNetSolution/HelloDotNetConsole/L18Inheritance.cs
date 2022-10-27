@@ -63,6 +63,13 @@ public static class L18Inheritance {
         c18B.PrintPNumB();
         
         Line();
-        
+
+        var newArr = new int[] {
+            2310,
+            2144,
+            2811,
+            1455,
+        };
+
     }
 }
