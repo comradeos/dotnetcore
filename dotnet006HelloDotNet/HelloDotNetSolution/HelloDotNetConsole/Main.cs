@@ -19,7 +19,8 @@ void Main() {
     // L15ConstructStatic.Run();
     // L16This.Run();
     // L17AccessorsGetSet.Run();
-    L18Inheritance.Run();
+    // L18Inheritance.Run();
+    L19AsIsPointerArray.Run();
 }
 
 Main();
