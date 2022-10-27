@@ -20,17 +20,46 @@ public class B22 : A22, I22 {
 
     public string Name { get; set; }
     public int Age { get; set; }
+
     public void GetData() {
         Console.WriteLine(this.Name + this.Age);
     }
 }
 
+public abstract class AMan {
+    private string Name { set; get; }
+    private int Age { set; get; }
+
+    protected AMan(string name, int age) {
+        this.Name = name;
+        this.Age = age;
+    }
+
+    public abstract void SelfIntroduce();
+}
+
+public class CPerson : AMan {
+    private string Name { set; get; }
+    private int Age { set; get; }
+
+    public CPerson(string name, int age) : base(name, age) {
+        this.Name = name;
+        this.Age = age;
+    }
+
+    public override void SelfIntroduce() {
+        Console.WriteLine("Hello, my name is " + this.Name + "\nI'm " + this.Age + " years old!");
+    }
+}
+
 public static class L22Interfaces {
     public static void Run() {
-        var b1 = new B22();
-        b1.SetData("bstr", 232);
-        b1.Name = "aaaa";
-        b1.Age = 444;
-        b1.GetData();
+        // var b1 = new B22();
+        // b1.SetData("bstr", 232);
+        // b1.Name = "aaaa";
+        // b1.Age = 444;
+        // b1.GetData();
+        var c1 = new CPerson("NAME", 777);
+        c1.SelfIntroduce();
     }
 }
