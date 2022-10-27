@@ -16,20 +16,27 @@ public class L18A {
     public void PrintValue() {
         Console.WriteLine(this._numValue);
     }
-    
 }
 
 public class L18B : L18A {
-    public L18B(int numValue) : base(numValue) {
+    private readonly int _additionalNumber;
+
+    public L18B(int numValue, int addNum) : base(numValue) {
+        this._additionalNumber = addNum;
+    }
+
+    public void PrintAddNum() {
+        Console.WriteLine(this._additionalNumber);
     }
 }
 
 public static class L18Inheritance {
     public static void Run() {
         var l18A = new L18A(7);
-        var l18B = new L18B(8);
+        var l18B = new L18B(8, 9);
         l18A.PrintValue(); // 7
         l18B.PrintValue(); // 8
+        l18B.PrintAddNum(); // 9
         Line();
     }
 }
