@@ -23,7 +23,8 @@ void Main() {
     // L19AsIsPointerArray.Run();
     // L20VirtualMethods.Run();
     // L21AbstractClassesMethods.Run();
-    L22Interfaces.Run();
+    // L22Interfaces.Run();
+    L23MethodOverload.Run();
 }
 
 Main();
