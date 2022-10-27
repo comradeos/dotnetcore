@@ -57,7 +57,10 @@ public static class L19AsIsPointerArray {
         c1921.word = "word";
         var obj = c1921 as C191; // использовать c1921 как єкземпляр C191
 
-
+        Console.WriteLine(obj is C191);
+        Console.WriteLine(obj is C192);
+        var myword = "hellllllllo";
+        Console.WriteLine(myword is C192);  // принадлежит ли myword к классу C192? (False)
 
 
     }    
