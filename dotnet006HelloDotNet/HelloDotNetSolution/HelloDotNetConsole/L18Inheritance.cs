@@ -55,7 +55,9 @@ public static class L18Inheritance {
         l18A.PrintValue(); // 7
         l18B.PrintValue(); // 8
         l18B.PrintAddNum(); // 9
+        
         Line();
+        
         var c18B = new C18B();
         c18B.SetPNum(444);
         c18B.PrintPNumB();
