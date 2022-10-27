@@ -26,9 +26,10 @@ public class L18B : L18A {
 
 public static class L18Inheritance {
     public static void Run() {
-        var l18a = new L18A(7);
-        var l18b = new L18B(8);
-        l18a.PrintValue(); // 7
-        l18b.PrintValue(); // 8
+        var l18A = new L18A(7);
+        var l18B = new L18B(8);
+        l18A.PrintValue(); // 7
+        l18B.PrintValue(); // 8
+        Line();
     }
 }
