@@ -17,6 +17,7 @@ public class A20 {
 public class B20 : A20 {
     public override void PrintNum() {
         Console.WriteLine(">>> " + this.num);
+        base.PrintNum();
     }
 }
 
