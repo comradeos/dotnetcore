@@ -27,6 +27,13 @@ public static class L19AsIsPointerArray {
         Console.WriteLine(c191List[1].number);
         Console.WriteLine(c191List[2].number);
 
+        foreach (var item in c191List) {
+            Console.WriteLine(item.number);
+        }
+        
+        
+        Line();
+        
         var strList = new List<string>() {
             "aaa",
             "bbb",
