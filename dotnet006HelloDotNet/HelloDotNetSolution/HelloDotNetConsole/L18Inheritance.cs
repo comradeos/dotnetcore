@@ -9,16 +9,14 @@ public class L18A {
         this._numValue = numValue;
     }
 
-    public int _Numvalue {
-        get {
-            Console.WriteLine("<<< get _numValue");
-            return 7;
-        }
-        set {
-            Console.WriteLine(">>> set _numValue");
-            this._numValue = value;
-        }
+    public void SetValue(int newValue) {
+        this._numValue = newValue;
     }
+
+    public void PrintValue() {
+        Console.WriteLine(this._numValue);
+    }
+    
 }
 
 
