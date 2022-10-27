@@ -25,7 +25,8 @@ void Main() {
     // L21AbstractClassesMethods.Run();
     // L22Interfaces.Run();
     // L23MethodOverload.Run();
-    L24Enums.Run();
+    // L24Enums.Run();
+    L25DataStructures.Run();
 }
 
 Main();
