@@ -20,7 +20,8 @@ void Main() {
     // L16This.Run();
     // L17AccessorsGetSet.Run();
     // L18Inheritance.Run();
-    L19AsIsPointerArray.Run();
+    // L19AsIsPointerArray.Run();
+    L20VirtualMethods.Run();
 }
 
 Main();
