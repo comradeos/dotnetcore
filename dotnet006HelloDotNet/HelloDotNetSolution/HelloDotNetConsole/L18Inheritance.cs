@@ -2,9 +2,12 @@
 
 using static L00Tools;
 
-
 public class L18A {
     private int _numValue;
+
+    public L18A(int numValue) {
+        this._numValue = numValue;
+    }
 
     public int _Numvalue {
         get {
@@ -16,13 +19,11 @@ public class L18A {
             this._numValue = value;
         }
     }
-    public L18A(int numValue) {
-        this._numValue = numValue;
-    }
 }
+
+
 
 public static class L18Inheritance {
     public static void Run() {
-      
     }
 }
