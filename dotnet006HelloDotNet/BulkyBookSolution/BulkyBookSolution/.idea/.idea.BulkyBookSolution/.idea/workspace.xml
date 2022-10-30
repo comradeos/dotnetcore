@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="997c49fb-d520-4480-9c32-446eee05f3e2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/Models/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667110989065</updated>
-      <workItem from="1667110996767" duration="6182000" />
+      <workItem from="1667110996767" duration="7056000" />
     </task>
     <servers />
   </component>
