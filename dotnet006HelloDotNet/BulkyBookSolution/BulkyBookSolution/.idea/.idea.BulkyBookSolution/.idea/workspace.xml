@@ -7,16 +7,23 @@
   <component name="ChangeListManager">
     <list default="true" id="997c49fb-d520-4480-9c32-446eee05f3e2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/ref/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/ref/BulkyBookWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/refint/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/refint/BulkyBookWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d9a41d47547e1fe7fe548b21ab4de12cc2671170a023bc8c629017837eb5f4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9ca552eea9bb8fababbf1cd3f981cf68849ccc365dcca5627376f98e505c74/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,6 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.4452174",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -81,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667110989065</updated>
-      <workItem from="1667110996767" duration="2636000" />
+      <workItem from="1667110996767" duration="3387000" />
     </task>
     <servers />
   </component>
