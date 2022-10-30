@@ -6,22 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="997c49fb-d520-4480-9c32-446eee05f3e2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BulkyBookWeb/Models/Category.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/BulkyBookWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/BulkyBookWeb.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/BulkyBookWeb.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/BulkyBookWeb.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/BulkyBookWeb.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/BulkyBookWeb.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/BulkyBookWeb.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/BulkyBookWeb.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.RazorAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.RazorAssemblyInfo.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.RazorAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/bin/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/BulkyBookWeb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/ref/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/ref/BulkyBookWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/refint/BulkyBookWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/Debug/net6.0/refint/BulkyBookWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/BulkyBookWeb/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667110989065</updated>
-      <workItem from="1667110996767" duration="5543000" />
+      <workItem from="1667110996767" duration="5948000" />
     </task>
     <servers />
   </component>
