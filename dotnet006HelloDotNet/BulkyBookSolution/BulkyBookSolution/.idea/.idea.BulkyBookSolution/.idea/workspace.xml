@@ -5,7 +5,9 @@
     <projectFile profileName="IIS Express">BulkyBookWeb/BulkyBookWeb.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="997c49fb-d520-4480-9c32-446eee05f3e2" name="Changes" comment="" />
+    <list default="true" id="997c49fb-d520-4480-9c32-446eee05f3e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BulkyBookSolution/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667110989065</updated>
       <workItem from="1667110996767" duration="10608000" />
-      <workItem from="1667122673076" duration="665000" />
+      <workItem from="1667122673076" duration="2255000" />
     </task>
     <servers />
   </component>
