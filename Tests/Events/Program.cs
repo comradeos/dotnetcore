@@ -8,7 +8,7 @@
         Console.WriteLine($">>> {myString} >>> {myInt}");
     }
 
-    public static void Run()
+    public void Run()
     {
         MyEvent += MyMethod;
         MyEvent("A", 7);
@@ -25,8 +25,10 @@ class Program
     }
     public static void Main()
     {
-        MyEventClass.Run();
-        MyEventClass.MyDelegate = this.PrivateOne;
-        MyEventClass.MyDelegate("A",9);
+        MyEventClass c1 = new();
+        c1.Run();
+        c1.MyDelegate += PrivateOne;
+        c1.MyDelegate("AAA",999);
+      
     }
 }
