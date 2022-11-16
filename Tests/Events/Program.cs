@@ -1,33 +1,16 @@
 ﻿class MyEventClass
 {
     public delegate void MyDelegate(string a, int b); // делегат
-    public static event MyDelegate? MyEvent; // событие
-
-    public static void MyMethod(string myString, int myInt)
+    public event MyDelegate? MyEvent; // событие
+    public void MyMethod(string myString, int myInt) // метод
     {
         Console.WriteLine($">>> {myString} >>> {myInt}");
     }
 
     public void Run()
     {
-        MyEvent += MyMethod;
-        MyEvent("A", 7);
-        
-    }
-}
-class MyDelegateClass
-{
-    public delegate void MyDelegate(string a, int b);
-    public static void MyMethod(string myString, int myInt)
-    {
-        Console.WriteLine($">>> {myString} >>> {myInt}");
-    }
-
-    public void Run()
-    {
-        MyDelegate d = MyMethod;
-        d("B", 8);
-        
+        this.MyEvent += MyMethod;
+        this.MyEvent("A", 7);
     }
 }
 
@@ -38,7 +21,5 @@ class Program
     {
         MyEventClass c1 = new();
         c1.Run();
-
-        MyDelegateClass d1 = new();
     }
 }
