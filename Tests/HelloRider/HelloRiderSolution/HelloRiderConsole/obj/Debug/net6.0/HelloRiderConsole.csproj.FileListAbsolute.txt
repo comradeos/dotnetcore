@@ -1,0 +1,15 @@
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/bin/Debug/net6.0/HelloRiderConsole
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/bin/Debug/net6.0/HelloRiderConsole.deps.json
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/bin/Debug/net6.0/HelloRiderConsole.runtimeconfig.json
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/bin/Debug/net6.0/HelloRiderConsole.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/bin/Debug/net6.0/HelloRiderConsole.pdb
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.csproj.AssemblyReference.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.GeneratedMSBuildEditorConfig.editorconfig
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.AssemblyInfoInputs.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.AssemblyInfo.cs
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.csproj.CoreCompileInputs.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/refint/HelloRiderConsole.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.pdb
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/HelloRiderConsole.genruntimeconfig.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/HelloRider/HelloRiderSolution/HelloRiderConsole/obj/Debug/net6.0/ref/HelloRiderConsole.dll
