@@ -1,7 +1,7 @@
 namespace NetCoreConsole.Controllers;
 
-public class BaseController {
+internal static class BaseController {
     public static void Run() {
-        Console.WriteLine("Hello");
+        Console.WriteLine("BaseController->Run");
     }
 }

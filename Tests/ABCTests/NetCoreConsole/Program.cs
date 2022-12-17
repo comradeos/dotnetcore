@@ -1,7 +1,10 @@
-﻿namespace NetCoreConsole;
+﻿using NetCoreConsole.Controllers;
 
-public abstract class Program {
+namespace NetCoreConsole;
+
+public static class Program {
     public static void Main() {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Program->Main");
+        BaseController.Run();
     }
 }
