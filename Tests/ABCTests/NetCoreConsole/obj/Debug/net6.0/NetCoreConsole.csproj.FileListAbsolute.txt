@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\bin\Debug\net6.0\NetCoreConsole.exe
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\bin\Debug\net6.0\NetCoreConsole.deps.json
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\bin\Debug\net6.0\NetCoreConsole.runtimeconfig.json
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\bin\Debug\net6.0\NetCoreConsole.dll
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\bin\Debug\net6.0\NetCoreConsole.pdb
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.AssemblyInfo.cs
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.dll
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\refint\NetCoreConsole.dll
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.pdb
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\NetCoreConsole.genruntimeconfig.cache
+C:\Workspace\dotnetcore\Tests\ABCTests\NetCoreConsole\obj\Debug\net6.0\ref\NetCoreConsole.dll
