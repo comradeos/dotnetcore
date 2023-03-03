@@ -1,4 +1,4 @@
-﻿Console.OutputEncoding = Encoding.UTF8;
+﻿using System.Text;
 
 void MyMethod<T>()
 {
@@ -6,9 +6,10 @@ void MyMethod<T>()
     {
         Console.WriteLine("Это строка, братан!");
     } else {
-        Console.WriteLine("Хз шо це но точно не строка, братан!");
+        Console.WriteLine("Хз шо це, но точно не строка, братан!");
     }
 }
 
-Console.WriteLine("Hello, World!");
+Console.OutputEncoding = Encoding.UTF8;
 MyMethod<string>();
+MyMethod<int>();
