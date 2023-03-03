@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\bin\Debug\net7.0\DelegatesEvents.exe
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\bin\Debug\net7.0\DelegatesEvents.deps.json
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\bin\Debug\net7.0\DelegatesEvents.runtimeconfig.json
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\bin\Debug\net7.0\DelegatesEvents.dll
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\bin\Debug\net7.0\DelegatesEvents.pdb
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.AssemblyInfo.cs
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.dll
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\refint\DelegatesEvents.dll
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.pdb
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\DelegatesEvents.genruntimeconfig.cache
+C:\Workspace\dotnetcore\Tests\DelegatesEvents\obj\Debug\net7.0\ref\DelegatesEvents.dll
