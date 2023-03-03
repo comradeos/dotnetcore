@@ -23,6 +23,11 @@ public class Program
 
         EventExample eventExample = new();
         eventExample.Run();
+
+        // ------------------------------------------------------------------
+
+        Example3 example3 = new();
+        example3.Run();
     }
 
 }
