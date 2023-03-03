@@ -1,5 +1,7 @@
 ﻿using System.Text;
 
+Console.OutputEncoding = Encoding.UTF8;
+
 void MyMethod<T>()
 {
     if (typeof(T) == typeof(string))
@@ -10,6 +12,7 @@ void MyMethod<T>()
     }
 }
 
-Console.OutputEncoding = Encoding.UTF8;
 MyMethod<string>();
 MyMethod<int>();
+
+Delegates.Run();
