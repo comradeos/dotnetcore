@@ -18,6 +18,11 @@ public class Program
         Delegate2 delegate2 = new(example2.ShowMessage1);
         delegate2 += example2.ShowMessage2;
         delegate2();
+
+        // ------------------------------------------------------------------
+
+        EventExample eventExample = new();
+        eventExample.Run();
     }
 
 }
