@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\Tests\TMethods\bin\Debug\net7.0\TMethods.exe
+C:\Workspace\dotnetcore\Tests\TMethods\bin\Debug\net7.0\TMethods.deps.json
+C:\Workspace\dotnetcore\Tests\TMethods\bin\Debug\net7.0\TMethods.runtimeconfig.json
+C:\Workspace\dotnetcore\Tests\TMethods\bin\Debug\net7.0\TMethods.dll
+C:\Workspace\dotnetcore\Tests\TMethods\bin\Debug\net7.0\TMethods.pdb
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.AssemblyInfo.cs
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.dll
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\refint\TMethods.dll
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.pdb
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\TMethods.genruntimeconfig.cache
+C:\Workspace\dotnetcore\Tests\TMethods\obj\Debug\net7.0\ref\TMethods.dll
