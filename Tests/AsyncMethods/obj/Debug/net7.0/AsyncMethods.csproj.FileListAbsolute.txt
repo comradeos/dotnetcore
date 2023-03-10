@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\Tests\AsyncMethods\bin\Debug\net7.0\AsyncMethods.exe
+C:\Workspace\dotnetcore\Tests\AsyncMethods\bin\Debug\net7.0\AsyncMethods.deps.json
+C:\Workspace\dotnetcore\Tests\AsyncMethods\bin\Debug\net7.0\AsyncMethods.runtimeconfig.json
+C:\Workspace\dotnetcore\Tests\AsyncMethods\bin\Debug\net7.0\AsyncMethods.dll
+C:\Workspace\dotnetcore\Tests\AsyncMethods\bin\Debug\net7.0\AsyncMethods.pdb
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.AssemblyInfo.cs
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.dll
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\refint\AsyncMethods.dll
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.pdb
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\AsyncMethods.genruntimeconfig.cache
+C:\Workspace\dotnetcore\Tests\AsyncMethods\obj\Debug\net7.0\ref\AsyncMethods.dll
