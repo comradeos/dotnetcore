@@ -47,6 +47,7 @@ class Program
         {
             Thread.Sleep(500);
             Console.WriteLine(".....");
+            Console.WriteLine(ShowMessageAsync().Status);
         } 
     }
 }
