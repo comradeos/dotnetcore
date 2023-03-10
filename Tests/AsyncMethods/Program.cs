@@ -40,14 +40,14 @@ class Program
     {
         Console.WriteLine("async/await");
 
-        ShowMessageAsync();
+        Task task = ShowMessageAsync();
         //Task<string> myString = GetStringValueAsync();
 
         while (true)
         {
             Thread.Sleep(500);
             Console.WriteLine(".....");
-            Console.WriteLine(ShowMessageAsync().Status);
+            Console.WriteLine(task.IsCompleted);
         } 
     }
 }
