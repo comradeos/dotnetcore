@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\dotnetcore\\dotnet007jetbrains\\MainSolution\\ConsoleProject\\ConsoleProject.csproj",
-      "projectName": "ConsoleProject",
-      "projectPath": "C:\\Workspace\\dotnetcore\\dotnet007jetbrains\\MainSolution\\ConsoleProject\\ConsoleProject.csproj",
+      "projectUniqueName": "C:\\Workspace\\dotnetcore\\dotnet008Metanit\\Metanit\\Basics\\Basics.csproj",
+      "projectName": "Basics",
+      "projectPath": "C:\\Workspace\\dotnetcore\\dotnet008Metanit\\Metanit\\Basics\\Basics.csproj",
       "packagesPath": "C:\\Users\\comradeos\\.nuget\\packages\\",
-      "outputPath": "C:\\Workspace\\dotnetcore\\dotnet007jetbrains\\MainSolution\\ConsoleProject\\obj\\",
+      "outputPath": "C:\\Workspace\\dotnetcore\\dotnet008Metanit\\Metanit\\Basics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
