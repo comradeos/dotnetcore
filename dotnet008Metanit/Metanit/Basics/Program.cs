@@ -6,6 +6,7 @@ class Program
 {
     public static void Main()
     {
+        Console.WriteLine(123);
         BenchmarkRunner.Run<StringTest>();
     }
 }
