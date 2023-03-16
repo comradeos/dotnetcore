@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow2" Height="450" Width="800"
+        Name="MyMainWindow">
     <Grid>
-        <Button Height="100" Width="100" Content="Click Me" Click="ButtonClick"/>
+        <TextBox x:Name="textBox1" Height="50" Width="100" VerticalAlignment="Center" Margin="0, 0, 0, 150"/>
+        <Button x:Name="button1" Height="50" Width="100" Content="Click Me" FontSize="13" Click="ButtonClick" />
     </Grid>
 </Window>
