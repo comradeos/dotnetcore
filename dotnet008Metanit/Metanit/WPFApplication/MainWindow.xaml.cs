@@ -13,17 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFApplication
+namespace WPFApplication;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-            Console.WriteLine(122);
-        }
+        InitializeComponent();
     }
+
+    private void ButtonClick(object sender, RoutedEventArgs e)
+    {
+        Console.WriteLine("Hello from ButtonClick() to console");
+        MessageBox.Show("Hello from ButtonClick()");
+    }
+
+
 }
