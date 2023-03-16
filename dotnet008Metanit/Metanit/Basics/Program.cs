@@ -1,13 +1,40 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 class Program
 {
     public static void Main()
     {
-        Console.WriteLine(123);
-        BenchmarkRunner.Run<StringTest>();
+        // BenchmarkRunner.Run<StringTest>();
+
+        string str = "hello world";
+
+        byte[] bytesArray = Encoding.ASCII.GetBytes(str);
+
+        foreach (byte item in bytesArray)
+        {
+            Console.WriteLine($"{item}");
+        }
+
+        Console.WriteLine();
+
+        BinaryWriter binaryWriter = new(File.Open("my_file", FileMode.Create));
+        binaryWriter.Write(bytesArray);
+        binaryWriter.Close();
+
+        BinaryReader binaryReader = new(File.Open("my_file", FileMode.Open));
+        byte[] reader = binaryReader.ReadBytes(200);
+        foreach (byte item in reader)
+        {
+            Console.WriteLine($"{item}");
+        }
+
+        string s = Encoding.ASCII.GetString(reader);
+        Console.WriteLine(s);
+        Console.ReadLine();
+
     }
 }
 
