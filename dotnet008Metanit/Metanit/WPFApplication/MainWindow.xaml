@@ -8,7 +8,7 @@
         Title="MainWindow2" Height="450" Width="800"
         Name="MyMainWindow">
     <Grid>
-        <TextBox x:Name="textBox1" Height="50" Width="100" VerticalAlignment="Center" Margin="0, 0, 0, 150"/>
+        <TextBox x:Name="textBox1" Height="50" Width="100" VerticalAlignment="Center" Margin="0, 0, 200, 0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Button x:Name="button1" Height="50" Width="100" Content="Click Me" FontSize="13" Click="ButtonClick" />
     </Grid>
 </Window>
