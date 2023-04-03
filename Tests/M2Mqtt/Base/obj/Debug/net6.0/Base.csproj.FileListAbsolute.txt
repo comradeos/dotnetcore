@@ -1,0 +1,17 @@
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/bin/Debug/net6.0/Base
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/bin/Debug/net6.0/Base.deps.json
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/bin/Debug/net6.0/Base.runtimeconfig.json
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/bin/Debug/net6.0/Base.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/bin/Debug/net6.0/Base.pdb
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.csproj.AssemblyReference.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.GeneratedMSBuildEditorConfig.editorconfig
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.AssemblyInfoInputs.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.AssemblyInfo.cs
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.csproj.CoreCompileInputs.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/refint/Base.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.pdb
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.genruntimeconfig.cache
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/ref/Base.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/bin/Debug/net6.0/M2Mqtt.Net.dll
+/Users/comradeos/Workspace/dotnetcore/Tests/M2Mqtt/Base/obj/Debug/net6.0/Base.csproj.CopyComplete
