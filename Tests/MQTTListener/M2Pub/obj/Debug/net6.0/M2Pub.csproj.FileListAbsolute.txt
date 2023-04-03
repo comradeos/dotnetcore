@@ -1,0 +1,17 @@
+C:\Workspace\MQTTListener\M2Pub\bin\Debug\net6.0\M2Pub.exe
+C:\Workspace\MQTTListener\M2Pub\bin\Debug\net6.0\M2Pub.deps.json
+C:\Workspace\MQTTListener\M2Pub\bin\Debug\net6.0\M2Pub.runtimeconfig.json
+C:\Workspace\MQTTListener\M2Pub\bin\Debug\net6.0\M2Pub.dll
+C:\Workspace\MQTTListener\M2Pub\bin\Debug\net6.0\M2Pub.pdb
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.csproj.AssemblyReference.cache
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.AssemblyInfoInputs.cache
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.AssemblyInfo.cs
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.csproj.CoreCompileInputs.cache
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.csproj.CopyComplete
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.dll
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\refint\M2Pub.dll
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.pdb
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\M2Pub.genruntimeconfig.cache
+C:\Workspace\MQTTListener\M2Pub\obj\Debug\net6.0\ref\M2Pub.dll
+C:\Workspace\MQTTListener\M2Pub\bin\Debug\net6.0\M2Mqtt.Net.dll

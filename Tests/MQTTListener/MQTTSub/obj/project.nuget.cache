@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PA8q1gCtGsinzyzyI28G+cZhXaYaNRednbaJqpgleFaXG90xyBy4Ut7lEbdlRUEjyy0LzrTpF7x3TjkP6PwztQ==",
+  "success": true,
+  "projectFilePath": "C:\\Workspace\\MQTTListener\\MQTTSub\\MQTTSub.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\comradeos\\.nuget\\packages\\mqttnet\\3.1.0\\mqttnet.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
