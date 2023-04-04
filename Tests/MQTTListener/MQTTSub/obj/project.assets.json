@@ -58,9 +58,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\MQTTListener\\MQTTSub\\MQTTSub.csproj",
-      "projectName": "MQTTSub",
-      "projectPath": "C:\\Workspace\\MQTTListener\\MQTTSub\\MQTTSub.csproj",
+      "projectUniqueName": "C:\\Workspace\\MQTTListener\\MQTTSub\\MQTTNetSub.csproj",
+      "projectName": "MQTTNetSub",
+      "projectPath": "C:\\Workspace\\MQTTListener\\MQTTSub\\MQTTNetSub.csproj",
       "packagesPath": "C:\\Users\\comradeos\\.nuget\\packages\\",
       "outputPath": "C:\\Workspace\\MQTTListener\\MQTTSub\\obj\\",
       "projectStyle": "PackageReference",

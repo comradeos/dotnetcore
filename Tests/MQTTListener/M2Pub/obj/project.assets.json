@@ -69,9 +69,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\MQTTListener\\M2Pub\\M2Pub.csproj",
-      "projectName": "M2Pub",
-      "projectPath": "C:\\Workspace\\MQTTListener\\M2Pub\\M2Pub.csproj",
+      "projectUniqueName": "C:\\Workspace\\MQTTListener\\M2Pub\\M2MQTTPub.csproj",
+      "projectName": "M2MQTTPub",
+      "projectPath": "C:\\Workspace\\MQTTListener\\M2Pub\\M2MQTTPub.csproj",
       "packagesPath": "C:\\Users\\comradeos\\.nuget\\packages\\",
       "outputPath": "C:\\Workspace\\MQTTListener\\M2Pub\\obj\\",
       "projectStyle": "PackageReference",

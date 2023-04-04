@@ -69,9 +69,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\MQTTListener\\M2Test\\M2Sub.csproj",
-      "projectName": "M2Sub",
-      "projectPath": "C:\\Workspace\\MQTTListener\\M2Test\\M2Sub.csproj",
+      "projectUniqueName": "C:\\Workspace\\MQTTListener\\M2Test\\M2MQTTSub.csproj",
+      "projectName": "M2MQTTSub",
+      "projectPath": "C:\\Workspace\\MQTTListener\\M2Test\\M2MQTTSub.csproj",
       "packagesPath": "C:\\Users\\comradeos\\.nuget\\packages\\",
       "outputPath": "C:\\Workspace\\MQTTListener\\M2Test\\obj\\",
       "projectStyle": "PackageReference",

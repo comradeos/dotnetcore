@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K+/xbqhl1lGFfZUmTLtU94+jeLCSxfPxSQ0VuONNuwdM2uexbzv8PXGX2CrzoZ6epITfQ0hRWG1Md5xiWFxSGw==",
+  "dgSpecHash": "aFkim0dMkObt/ngVNgVxyynswh3/tCUfCqueJxqq9xh0wYJjomlKwQduxyqT1KqtqF18VVITkaihidfBFXfc0A==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\MQTTListener\\M2Test\\M2Sub.csproj",
+  "projectFilePath": "C:\\Workspace\\MQTTListener\\M2Test\\M2MQTTSub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\comradeos\\.nuget\\packages\\m2mqtt\\4.3.0\\m2mqtt.4.3.0.nupkg.sha512"
   ],

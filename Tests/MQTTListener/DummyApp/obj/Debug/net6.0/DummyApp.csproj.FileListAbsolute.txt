@@ -1,0 +1,15 @@
+C:\Workspace\MQTTListener\DummyApp\bin\Debug\net6.0\DummyApp.exe
+C:\Workspace\MQTTListener\DummyApp\bin\Debug\net6.0\DummyApp.deps.json
+C:\Workspace\MQTTListener\DummyApp\bin\Debug\net6.0\DummyApp.runtimeconfig.json
+C:\Workspace\MQTTListener\DummyApp\bin\Debug\net6.0\DummyApp.dll
+C:\Workspace\MQTTListener\DummyApp\bin\Debug\net6.0\DummyApp.pdb
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.csproj.AssemblyReference.cache
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.AssemblyInfoInputs.cache
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.AssemblyInfo.cs
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.csproj.CoreCompileInputs.cache
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.dll
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\refint\DummyApp.dll
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.pdb
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\DummyApp.genruntimeconfig.cache
+C:\Workspace\MQTTListener\DummyApp\obj\Debug\net6.0\ref\DummyApp.dll

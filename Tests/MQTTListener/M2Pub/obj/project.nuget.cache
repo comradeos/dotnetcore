@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DmY4ONcTeyiEwU1YrpXs2bY5WPoRLwHfNPHeLBk3O/eteN3PzbnuwIFNnYD96PYlKEsW2Ra3L74sVf/PLTe6Gw==",
+  "dgSpecHash": "6pX9s/SqJg1l+3YYe+guXg4W+bbQgO8D/gjlyFoumNbYXRIt0O5miZfXFeHg8au5O2UZIyMw5FzcxhF6Pg890A==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\MQTTListener\\M2Pub\\M2Pub.csproj",
+  "projectFilePath": "C:\\Workspace\\MQTTListener\\M2Pub\\M2MQTTPub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\comradeos\\.nuget\\packages\\m2mqtt\\4.3.0\\m2mqtt.4.3.0.nupkg.sha512"
   ],
