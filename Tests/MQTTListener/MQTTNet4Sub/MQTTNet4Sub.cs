@@ -3,6 +3,7 @@ using System.Text;
 using MQTTnet.Client;
 using MQTTnet.Packets;
 using MQTTnet.Server;
+using System.Diagnostics;
 
 // https://github.com/dotnet/MQTTnet
 // https://github.com/dotnet/MQTTnet/blob/master/Samples/Client/Client_Subscribe_Samples.cs
@@ -18,9 +19,24 @@ class Subscriber
 
         IMqttClient client = mqttFactory.CreateMqttClient();
 
+        /*
+        var tslOption = new MqttClientOptionsBuilderTlsParameters
+        {
+            UseTls = true,
+            Certificates = new List<X509Certificate>
+            {
+                new X509Certificate("mosquitto.org.crt")
+            },
+            AllowUntrustedCertificates = true,
+            IgnoreCertificateChainErrors = true,
+            IgnoreCertificateRevocationErrors = true
+        };
+        */
+
         MqttClientOptions options = new MqttClientOptionsBuilder()
             .WithClientId(Guid.NewGuid().ToString())
             .WithTcpServer("test.mosquitto.org", 1883)
+            // .WithTls(tslOption)
             .WithCleanSession()
             .Build();
 
@@ -32,8 +48,17 @@ class Subscriber
         
         client.ApplicationMessageReceivedAsync += e =>
         {
-            string message = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+            string message = "";
+
+            if (e.ApplicationMessage.Payload != null)
+            {
+                message = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+            }
+
             Console.WriteLine($"{DateTime.Now}: {message}");
+
+            SendToDummyApp(message);
+
             return Task.CompletedTask;
         };
 
@@ -41,5 +66,23 @@ class Subscriber
 
         await client.DisconnectAsync();
 
+    }
+
+    private static void SendToDummyApp(string message)
+    {
+        string dummyAppPath = @"..\..\..\..\DummyApp\bin\Debug\net6.0\DummyApp.exe";
+
+        ProcessStartInfo startInfo = new()
+        {
+            FileName = dummyAppPath,
+            Arguments = message
+        };
+
+        Process exeProcess = Process.Start(startInfo);
+
+        if (exeProcess != null)
+        {
+            exeProcess.WaitForExit();
+        }
     }
 }

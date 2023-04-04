@@ -2,7 +2,7 @@
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine($"This a dummy app:");
+        Console.Write($"DummyApp's Arguments: ");
 
         if (args.Length > 0)
         {
@@ -11,12 +11,14 @@
             foreach (string item in args)
             {
                 ++counter;
-                Console.WriteLine($"Argument #{counter}: {item}");
+                Console.Write($"#{counter}: {item} ");
             }
             
         } else 
         {
-            Console.WriteLine("No arguments.");
+            Console.Write("No Arguments.");
         }
+
+        Console.WriteLine();
     }
 }
