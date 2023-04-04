@@ -2,10 +2,13 @@
 {
     public static void Main(string[] args)
     {
-        Console.Write($"DummyApp's Arguments: ");
-
         if (args.Length > 0)
         {
+            Console.WriteLine("\n----------------------");
+            string content = File.ReadAllText(args[0]);
+            Console.WriteLine(content);
+
+            Console.Write($"\nArguments: ");
             int counter = 0;
 
             foreach (string item in args)

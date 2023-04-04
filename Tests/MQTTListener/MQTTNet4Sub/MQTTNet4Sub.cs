@@ -49,13 +49,15 @@ class Subscriber
         client.ApplicationMessageReceivedAsync += e =>
         {
             string message = "";
+            string topic = "";
 
             if (e.ApplicationMessage.Payload != null)
             {
                 message = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+                topic = e.ApplicationMessage.Topic;
             }
 
-            Console.WriteLine($"{DateTime.Now}: {message}");
+            Console.WriteLine($"{DateTime.Now} on {topic}: \n{message}");
 
             SendToDummyApp(message);
 
@@ -70,12 +72,17 @@ class Subscriber
 
     private static void SendToDummyApp(string message)
     {
+        string fileName = "file.xml";
+        File.WriteAllText(fileName, message);
+
+        string fileFullPath = Path.GetFullPath(fileName);
+
         string dummyAppPath = @"..\..\..\..\DummyApp\bin\Debug\net6.0\DummyApp.exe";
 
         ProcessStartInfo startInfo = new()
         {
             FileName = dummyAppPath,
-            Arguments = message
+            Arguments = fileFullPath
         };
 
         Process exeProcess = Process.Start(startInfo);
