@@ -18,17 +18,10 @@ internal static class Program
 
         if (items.ElementAtOrDefault(0) == null)
         {
-            items.Add(new Item("A"));
+            items.Add(new Item("ItemA"));
         }
         
         System.Console.WriteLine(items[0].Name );
-        
-        Environment.Exit(0);        
-        if (items.ElementAtOrDefault(0) == null)
-        {
-            items[0] = new Item("a");
-        }
-        
-        System.Console.WriteLine(items[0].Name );
+
     }
 }
