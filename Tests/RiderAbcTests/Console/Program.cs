@@ -22,8 +22,6 @@ internal static class Program
         
         Console.WriteLine(items[0].Name );
         
-        
-        Environment.Exit(0);        
         Environment.Exit(0);        
         if (items.ElementAtOrDefault(0) == null)
         {
