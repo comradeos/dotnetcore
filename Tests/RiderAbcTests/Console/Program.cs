@@ -1,4 +1,6 @@
-﻿class Item
+﻿namespace Console;
+
+public class Item
 {
     public string Name { get; set; }
 
@@ -7,7 +9,6 @@
         Name = name;
     }
 }
-
 
 internal static class Program
 {
@@ -20,7 +21,7 @@ internal static class Program
             items.Add(new Item("A"));
         }
         
-        Console.WriteLine(items[0].Name );
+        System.Console.WriteLine(items[0].Name );
         
         Environment.Exit(0);        
         if (items.ElementAtOrDefault(0) == null)
@@ -28,6 +29,6 @@ internal static class Program
             items[0] = new Item("a");
         }
         
-        Console.WriteLine(items[0].Name );
+        System.Console.WriteLine(items[0].Name );
     }
 }
