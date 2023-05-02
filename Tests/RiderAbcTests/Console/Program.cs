@@ -24,6 +24,7 @@ internal static class Program
         
         
         Environment.Exit(0);        
+        Environment.Exit(0);        
         if (items.ElementAtOrDefault(0) == null)
         {
             items[0] = new Item("a");
