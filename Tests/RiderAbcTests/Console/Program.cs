@@ -22,5 +22,7 @@ internal static class Program
         }
         
         System.Console.WriteLine(items[0].Name );
+        System.Console.WriteLine(items[0].Name );
+        System.Console.WriteLine(items[0].Name );
     }
 }
