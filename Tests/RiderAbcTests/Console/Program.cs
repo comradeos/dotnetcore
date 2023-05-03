@@ -18,7 +18,7 @@ internal static class Program
 
         if (items.ElementAtOrDefault(0) == null)
         {
-            items.Add(new Item("ItemABC1"));
+            items.Add(new Item("ItemA"));
         }
         
         System.Console.WriteLine(items[0].Name );
