@@ -6,7 +6,7 @@ public class Item
 
     public Item (string name)
     {
-        Name = name + "1";
+        Name = name;
     }
 }
 
