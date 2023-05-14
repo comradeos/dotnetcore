@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "MyLibrary/2.0.0": {
+      "MyLibrary/3.0.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/MyLibrary.dll": {}
@@ -14,21 +14,21 @@
     }
   },
   "libraries": {
-    "MyLibrary/2.0.0": {
-      "sha512": "hNFYHckjyImQMq2IjmkEciGXLMe/d99awtCv68fwHpL7gAK/pcAFWe7LzvB+m9xWNuhwEzdeB37Yj7zndoC1fg==",
+    "MyLibrary/3.0.0": {
+      "sha512": "5WEb0x4YBcbcIgwrD+wYFLcnxGiJLNudLe6SSRkxRpfN9gr+J3B9tVnODXFQTqsiHN8+lN+FQq9vCd69q8xJsA==",
       "type": "package",
-      "path": "mylibrary/2.0.0",
+      "path": "mylibrary/3.0.0",
       "files": [
         ".nupkg.metadata",
         "lib/net6.0/MyLibrary.dll",
-        "mylibrary.2.0.0.nupkg.sha512",
+        "mylibrary.3.0.0.nupkg.sha512",
         "mylibrary.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "MyLibrary >= 2.0.0"
+      "MyLibrary >= 3.0.0"
     ]
   },
   "packageFolders": {
@@ -79,7 +79,7 @@
         "dependencies": {
           "MyLibrary": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "[3.0.0, )"
           }
         },
         "imports": [
@@ -101,5 +101,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "No Authorization header detected"
+    }
+  ]
 }

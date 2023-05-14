@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MyLibrary</id>
+    <version>3.0.0</version>
+    <authors>MyLibrary</authors>
+    <description>Updated Package v3</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\MyLibrary\bin\Debug\net6.0\MyLibrary.dll" target="lib\net6.0\MyLibrary.dll" />
+  </files>
+</package>
