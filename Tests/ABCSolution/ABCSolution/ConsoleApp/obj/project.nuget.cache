@@ -6,12 +6,5 @@
   "expectedPackageFiles": [
     "C:\\Users\\comradeos\\.nuget\\packages\\mylibrary\\2.0.0\\mylibrary.2.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "No Authorization header detected"
-    }
-  ]
+  "logs": []
 }
