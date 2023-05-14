@@ -7,7 +7,7 @@
   <packageSourceCredentials>
     <github>
       <add key="Username" value="comradeos" />
-      <add key="ClearTextPassword" value="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" />
+      <add key="ClearTextPassword" value="" />
     </github>
   </packageSourceCredentials>
 </configuration>
