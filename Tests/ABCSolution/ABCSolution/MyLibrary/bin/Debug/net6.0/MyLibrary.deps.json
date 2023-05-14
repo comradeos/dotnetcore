@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "MyLibrary/1.0.0": {
+      "MyLibrary/2": {
         "runtime": {
           "MyLibrary.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "MyLibrary/1.0.0": {
+    "MyLibrary/2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

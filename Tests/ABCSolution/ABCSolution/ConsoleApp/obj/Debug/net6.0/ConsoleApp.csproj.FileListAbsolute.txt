@@ -9,7 +9,6 @@ C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\bin\Debug\net6.
 C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\bin\Debug\net6.0\ConsoleApp.dll
 C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\bin\Debug\net6.0\ConsoleApp.pdb
 C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\bin\Debug\net6.0\MyLibrary.dll
-C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\bin\Debug\net6.0\MyLibrary.pdb
 C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\obj\Debug\net6.0\ConsoleApp.csproj.CopyComplete
 C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\obj\Debug\net6.0\ConsoleApp.dll
 C:\Workspace\dotnetcore\Tests\ABCSolution\ABCSolution\ConsoleApp\obj\Debug\net6.0\refint\ConsoleApp.dll

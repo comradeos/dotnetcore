@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "Q7xAOcCAOXPz8HJaFzmakPBhnMkBfT0a/FkvG56f/ElpEdlsW2rWv4yld0bu3K62LRw/HCY/oCr6fXMb1F2jLg==",
+  "dgSpecHash": "kNZhUPEGZ/qOpFvMyunxMCBvY8qy1LkdopdRfqQV8i68y7y+otIf/LHP0I9ulovSTTjpHZ5NidyrJruEknRuBw==",
   "success": true,
   "projectFilePath": "C:\\Workspace\\dotnetcore\\Tests\\ABCSolution\\ABCSolution\\ConsoleApp\\ConsoleApp.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\comradeos\\.nuget\\packages\\mylibrary\\2.0.0\\mylibrary.2.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "No Authorization header detected"
+    }
+  ]
 }
