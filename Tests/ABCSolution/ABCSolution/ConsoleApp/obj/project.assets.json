@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "MyLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MyLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MyLibrary/MyLibrary.csproj",
+      "msbuildProject": "../MyLibrary/MyLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "MyLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\comradeos\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Workspace\\dotnetcore\\Tests\\ABCSolution\\ABCSolution\\MyLibrary\\MyLibrary.csproj": {
+              "projectPath": "C:\\Workspace\\dotnetcore\\Tests\\ABCSolution\\ABCSolution\\MyLibrary\\MyLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
