@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
+using System.IO;
+using System.Reflection;
 
 namespace WebServer.Controllers;
 
@@ -14,7 +17,14 @@ public class HomeController : ControllerBase
         Console.WriteLine(Request.Form["amount"]);
         Console.WriteLine(Request.Form["id"]);
 
-        var responseString = await client.GetStringAsync("http://127.0.0.2:8888/");
+        System.IO.File.WriteAllText("newfile", "aaa");
+
+        Console.WriteLine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location));
+
+        Console.WriteLine(System.IO.File.Exists("../../database.db") ? "File exists." : "File does not exist.");
+        Console.WriteLine(System.IO.File.Exists("./WebServer.dll") ? "File exists." : "File does not exist.");
+
+        var responseString = await client.GetStringAsync("http://127.0.0.1:8888/");
         Console.WriteLine($"RESPONSE FROM {responseString}");
         return Ok("a");
     }

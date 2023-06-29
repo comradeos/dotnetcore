@@ -31,7 +31,7 @@ while (true)
     context.Response.KeepAlive = false;
     context.Response.ContentLength64 = bytes.Length;
 
-    var output = context.Response.OutputStream;
+    Stream output = context.Response.OutputStream;
     output.Write(bytes, 0, bytes.Length);
     context.Response.Close();
 
