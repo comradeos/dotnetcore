@@ -20,16 +20,21 @@ public class Helper
             foreach (DbTask task in DbTasks)
             {
                 string response = SendData(0, task.Address);
-                
+                Console.WriteLine($"Processing task #{task.Id}...");
+                Thread.Sleep(300);
+
                 if (response != "failed")
                 {
                     CompleteDbTask(task.Id);
+                    Console.WriteLine($"Task #{task.Id} completed!");
+                    Thread.Sleep(300);
+
                 }
                 
                 // Console.WriteLine(task.Id);
             }
 
-            Thread.Sleep(3000);
+            Thread.Sleep(500);
             Console.WriteLine($"Elements in queue: {DbTasks.Count}");
         }
     }
@@ -134,7 +139,6 @@ public class Helper
 
         connection.Close();
     }
-
 }
 
 public class DbTask
