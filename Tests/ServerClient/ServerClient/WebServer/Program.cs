@@ -1,3 +1,5 @@
+using WebServer;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
@@ -15,4 +17,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+Task task = Task.Run(() => Helper.HandleQueue());
+
 app.Run();

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
-using System.IO;
-using System.Reflection;
+using static WebServer.Helper;
+using Microsoft.Data.Sqlite;
+using System.Net;
 
 namespace WebServer.Controllers;
 
@@ -9,18 +9,22 @@ namespace WebServer.Controllers;
 [Route("[controller]")]
 public class HomeController : ControllerBase
 {
-    private static readonly HttpClient client = new HttpClient();
-
     [HttpPost(Name = "Home")]
-    public async Task<IActionResult> Get()
+    public IActionResult Get()
     {
-        Console.WriteLine(Request.Form["amount"]);
-        Console.WriteLine(Request.Form["id"]);
+        // Console.WriteLine(Request.Form["amount"]);
+        // Console.WriteLine(Request.Form["id"]);
 
-        string responseString = await client.GetStringAsync("http://127.0.0.1:8888/");
+        int id = 0;
+        try { id = Convert.ToInt32(Request.Form["id"]);  } catch { Console.WriteLine("Can't convert id!"); }
 
-        Console.WriteLine($"RESPONSE FROM {responseString}");
+        decimal amount = 0;
+        try { amount = Convert.ToDecimal(Request.Form["amount"]);  } catch { Console.WriteLine("Can't convert amount!"); }
 
-        return Ok("a");
+        string address = Request.Form["address"];
+
+        AddDbTask(id, address, amount);
+
+        return Ok("Ok");
     }
 }

@@ -25,7 +25,7 @@ while (true)
     // Get the data from the HTTP stream
     string body = new StreamReader(context.Request.InputStream).ReadToEnd();
 
-    byte[] bytes = Encoding.UTF8.GetBytes("good!");
+    byte[] bytes = Encoding.UTF8.GetBytes("Data received!");
 
     context.Response.StatusCode = 200;
     context.Response.KeepAlive = false;

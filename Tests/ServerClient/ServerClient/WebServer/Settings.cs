@@ -1,4 +1,6 @@
-﻿namespace WebServer;
+﻿using System.Xml.Linq;
+
+namespace WebServer;
 
 public class Settings
 {
