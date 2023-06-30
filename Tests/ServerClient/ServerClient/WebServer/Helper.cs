@@ -1,41 +1,39 @@
-﻿using Microsoft.AspNetCore.Mvc.Formatters;
-using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.Sqlite;
 
 namespace WebServer;
 
 public class Helper
 {
-    private static SqliteConnection connection = new("Data Source=database.db");
+    private static readonly SqliteConnection connection = new("Data Source=database.db");
+    private static readonly string SenderTaskTable = "sender_tasks";
+    private static readonly string SenderLogTable = "sender_log";
+
     private static readonly HttpClient httpClient = new();
 
-    public static Queue<Task> Tasks = new();
-    public static List<DbTask> DbTasks = new();
+    public static List<SenderTask> DbSenderTasks = new();
 
-    public static void HandleQueue()
+    public static void ProcessDbSenderTasks()
     {
         while (true)
         {
-            DbTasks = GetDbTasks();
+            DbSenderTasks = GetDbSenderTasks();
 
-            foreach (DbTask task in DbTasks)
+            Console.Write($"Database sender tasks in queue: {DbSenderTasks.Count}\r");
+
+            foreach (SenderTask task in DbSenderTasks)
             {
-                string response = SendData(0, task.Address);
-                Console.WriteLine($"Processing task #{task.Id}...");
+                Console.WriteLine($"\nProcessing task #{task.Id}...");
+                string response = SendData(task.Amount, task.Address);
                 Thread.Sleep(300);
 
                 if (response != "failed")
                 {
-                    CompleteDbTask(task.Id);
+                    CompleteDbSenderTask(task.Id);
                     Console.WriteLine($"Task #{task.Id} completed!");
                     Thread.Sleep(300);
-
                 }
-                
-                // Console.WriteLine(task.Id);
             }
-
             Thread.Sleep(500);
-            Console.WriteLine($"Elements in queue: {DbTasks.Count}");
         }
     }
 
@@ -52,11 +50,11 @@ public class Helper
         return responseString;
     }
 
-    public static List<DbTask> GetDbTasks()
+    public static List<SenderTask> GetDbSenderTasks()
     {
-        List<DbTask> result = new();
+        List<SenderTask> result = new();
 
-        string query = "SELECT * FROM tasks WHERE status <> 0";
+        string query = $"SELECT * FROM {SenderTaskTable} WHERE status <> 0";
 
         connection.Open();
 
@@ -68,7 +66,7 @@ public class Helper
             command = new(query, connection);
             reader = command.ExecuteReader();
         } catch {
-            Console.WriteLine("Can't get db tasks!");
+            Console.WriteLine("Can't get DB sender tasks!");
             return result;
         }
 
@@ -76,7 +74,7 @@ public class Helper
         {
             while (reader.Read())
             {
-                DbTask dbTask = new();
+                SenderTask senderTask = new();
 
                 object idObj = reader["id"];
                 object deviceObj = reader["device"];
@@ -84,23 +82,25 @@ public class Helper
                 object statusObj = reader["status"];
                 object amountObj = reader["amount"];
 
-                try { dbTask.Id = Convert.ToInt32(idObj); } catch { Console.WriteLine("Can't convert id"); }
-                try { dbTask.Device = Convert.ToInt32(deviceObj); } catch { Console.WriteLine("Can't convert device"); }
-                try { dbTask.Address = Convert.ToString(addressObj) ?? ""; } catch { Console.WriteLine("Can't convert address"); }
-                try { dbTask.Status = Convert.ToInt32(statusObj); } catch { Console.WriteLine("Can't convert status"); }
-                try { dbTask.Amount = Convert.ToInt32(amountObj); } catch { Console.WriteLine("Can't convert amount"); }
+                try { senderTask.Id = Convert.ToInt32(idObj); } catch { Console.WriteLine("Can't convert 'id' value to Int32!"); }
+                try { senderTask.Status = Convert.ToInt32(statusObj); } catch { Console.WriteLine("Can't convert 'status' value to Int32!"); }
+                try { senderTask.Amount = Convert.ToInt32(amountObj); } catch { Console.WriteLine("Can't convert 'amount' value to Int32!"); }
 
-                result.Add(dbTask);
+                senderTask.Device = (string)deviceObj;
+                senderTask.Address = (string)addressObj;
+
+                result.Add(senderTask);
             }
         }
 
         connection.Close();
+
         return result;
     }
 
-    public static void CompleteDbTask(int id)
+    public static void CompleteDbSenderTask(int id)
     {
-        string query = $"UPDATE tasks SET status = 0 WHERE id = {id};";
+        string query = $"UPDATE {SenderTaskTable} SET status = 0 WHERE id = {id};";
 
         connection.Open();
 
@@ -119,9 +119,9 @@ public class Helper
         connection.Close();
     }
 
-    public static void AddDbTask(int device, string address, decimal amount)
+    public static void AddDbSenderTask(string device, string address, decimal amount)
     {
-        string query = $"INSERT INTO tasks (device, address, amount, status) VALUES ({device}, '{address}', {amount}, 1);";
+        string query = $"INSERT INTO {SenderTaskTable} (device, address, amount, status) VALUES ('{device}', '{address}', {amount}, 1);";
 
         connection.Open();
 
@@ -134,18 +134,18 @@ public class Helper
         }
         catch
         {
-            Console.WriteLine("Can't complete db task!");
+            Console.WriteLine("Can't add db task!");
         }
 
         connection.Close();
     }
 }
 
-public class DbTask
+public class SenderTask
 {
     public int Id { get; set; }
-    public int Device { get; set; }
+    public string Device { get; set; } = default!;
     public string Address { get; set; } = default!;
-    public int Status { get; set; }
     public decimal Amount { get; set; }
+    public int Status { get; set; }
 }

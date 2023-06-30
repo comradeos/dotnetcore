@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using static WebServer.Helper;
-using static WebServer.Settings;
 
 namespace WebServer.Controllers;
 
@@ -8,22 +7,29 @@ namespace WebServer.Controllers;
 [Route("[controller]")]
 public class HomeController : ControllerBase
 {
+    private readonly IConfiguration _configuration;
+
+    public HomeController(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
+
     [HttpPost(Name = "Home")]
     public IActionResult Get()
     {
-        int id = 0;
-        try { id = Convert.ToInt32(Request.Form["id"]);  } catch { Console.WriteLine("Can't convert id!"); }
-
+        string id = Request.Form["id"];
         decimal amount = 0;
+
         try { amount = Convert.ToDecimal(Request.Form["amount"]);  } catch { Console.WriteLine("Can't convert amount!"); }
 
-        Addresses.TryGetValue(id, out string? address);
+        string? address = _configuration.GetValue<string>($"Devices:{id}");
 
-        if (address != null)
+        if (amount != 0 && address != null)
         {
-            AddDbTask(id, address, amount);
+            AddDbSenderTask(id, address, amount);
+            return Ok($"Db sender task added!");
         }
 
-        return Ok("Ok");
+        return Ok($"Ok");
     }
 }
