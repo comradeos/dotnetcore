@@ -5,16 +5,16 @@ namespace WebServer.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class HomeController : ControllerBase
+public class PostController : ControllerBase
 {
     private readonly IConfiguration _configuration;
 
-    public HomeController(IConfiguration configuration)
+    public PostController(IConfiguration configuration)
     {
         _configuration = configuration;
     }
 
-    [HttpPost(Name = "Home")]
+    [HttpPost(Name = "Post")]
     public IActionResult Get()
     {
         string id = Request.Form["id"];
@@ -30,6 +30,6 @@ public class HomeController : ControllerBase
             return Ok($"Db sender task added!");
         }
 
-        return Ok($"Ok");
+        return Ok("");
     }
 }

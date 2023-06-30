@@ -1,12 +1,14 @@
 ﻿using System.Net;
 using System.Text;
 
-string startMessage = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Application started!";
+string appName = "AppClient0";
+
+string startMessage = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Application '{appName}' started!";
 Console.WriteLine(startMessage);
 
 HttpListener listener = new();
 
-listener.Prefixes.Add("http://127.0.0.1:8888/");
+listener.Prefixes.Add("http://127.0.0.1:8880/");
 listener.Start();
 
 while (true)

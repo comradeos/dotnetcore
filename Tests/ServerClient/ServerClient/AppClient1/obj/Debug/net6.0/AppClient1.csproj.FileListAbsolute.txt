@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\bin\Debug\net6.0\AppClient1.exe
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\bin\Debug\net6.0\AppClient1.deps.json
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\bin\Debug\net6.0\AppClient1.runtimeconfig.json
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\bin\Debug\net6.0\AppClient1.dll
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\bin\Debug\net6.0\AppClient1.pdb
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.AssemblyInfo.cs
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.dll
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\refint\AppClient1.dll
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.pdb
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\AppClient1.genruntimeconfig.cache
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\AppClient1\obj\Debug\net6.0\ref\AppClient1.dll
