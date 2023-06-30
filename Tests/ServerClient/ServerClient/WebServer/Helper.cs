@@ -43,7 +43,7 @@ public class Helper
 
         try
         {
-            responseString = httpClient.GetStringAsync(address).Result;
+            responseString = httpClient.GetStringAsync($"{address}/?amount={amount}").Result;
         }
         catch { }
 
@@ -66,7 +66,7 @@ public class Helper
             command = new(query, connection);
             reader = command.ExecuteReader();
         } catch {
-            Console.WriteLine("Can't get DB sender tasks!");
+            Console.WriteLine("Can't get db sender tasks!");
             return result;
         }
 
@@ -84,7 +84,7 @@ public class Helper
 
                 try { senderTask.Id = Convert.ToInt32(idObj); } catch { Console.WriteLine("Can't convert 'id' value to Int32!"); }
                 try { senderTask.Status = Convert.ToInt32(statusObj); } catch { Console.WriteLine("Can't convert 'status' value to Int32!"); }
-                try { senderTask.Amount = Convert.ToInt32(amountObj); } catch { Console.WriteLine("Can't convert 'amount' value to Int32!"); }
+                try { senderTask.Amount = Convert.ToDecimal(amountObj); } catch { Console.WriteLine("Can't convert 'amount' value to ToDecimal!"); }
 
                 senderTask.Device = (string)deviceObj;
                 senderTask.Address = (string)addressObj;
@@ -113,7 +113,7 @@ public class Helper
         }
         catch
         {
-            Console.WriteLine("Can't complete db task!");
+            Console.WriteLine("Can't complete db sender task!");
         }
 
         connection.Close();
@@ -134,7 +134,7 @@ public class Helper
         }
         catch
         {
-            Console.WriteLine("Can't add db task!");
+            Console.WriteLine("Can't add db sender task!");
         }
 
         connection.Close();
