@@ -15,7 +15,7 @@ public class PostController : ControllerBase
     }
 
     [HttpPost(Name = "Post")]
-    public IActionResult Get()
+    public IActionResult Post()
     {
         string id = Request.Form["id"];
         decimal amount = 0;
