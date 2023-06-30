@@ -18,19 +18,31 @@ public class Helper
         {
             DbSenderTasks = GetDbSenderTasks();
 
-            Console.Write($"Database sender tasks in queue: {DbSenderTasks.Count}\r");
+            string counterMessage = $"Database sender tasks in queue: {DbSenderTasks.Count}";
+
+            if (DbSenderTasks.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write($"{counterMessage}\r");
+            } else
+            {
+                AlertMessage(counterMessage);
+            }
 
             foreach (SenderTask task in DbSenderTasks)
             {
-                Console.WriteLine($"\nProcessing task #{task.Id}...");
+                Console.WriteLine($"Processing task id {task.Id}...");
                 string response = SendData(task.Amount, task.Address);
                 Thread.Sleep(300);
 
                 if (response != "failed")
                 {
                     CompleteDbSenderTask(task.Id);
-                    Console.WriteLine($"Task #{task.Id} completed!");
+                    SuccessMessage($"Task id {task.Id} completed!");
                     Thread.Sleep(300);
+                } else
+                {
+                    FailureMessage($"Task id {task.Id} failed to complete!");
                 }
             }
             Thread.Sleep(500);
@@ -138,6 +150,27 @@ public class Helper
         }
 
         connection.Close();
+    }
+
+    public static void SuccessMessage(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine(message);
+        Console.ForegroundColor = ConsoleColor.Gray;
+    }
+
+    public static void FailureMessage(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine(message);
+        Console.ForegroundColor = ConsoleColor.Gray;
+    }
+
+    public static void AlertMessage(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine(message);
+        Console.ForegroundColor = ConsoleColor.Gray;
     }
 }
 
