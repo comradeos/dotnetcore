@@ -24,6 +24,7 @@ public class Helper
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write($"{counterMessage}\r");
+                Console.ForegroundColor = ConsoleColor.Gray;
             } else
             {
                 AlertMessage(counterMessage);
@@ -39,7 +40,6 @@ public class Helper
                 {
                     CompleteDbSenderTask(task.Id);
                     SuccessMessage($"Task id {task.Id} completed!");
-                    Thread.Sleep(300);
                 } else
                 {
                     FailureMessage($"Task id {task.Id} failed to complete!");
