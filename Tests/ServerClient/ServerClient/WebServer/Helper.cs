@@ -72,7 +72,7 @@ public class Helper
     {
         List<SenderTask> result = new();
 
-        string query = $"SELECT * FROM {SenderTaskTable} WHERE status <> 0";
+        string query = $"SELECT * FROM {SenderTaskTable} WHERE status <> {(int)Status.SUCCESS}";
 
         connection.Open();
 
@@ -118,7 +118,7 @@ public class Helper
 
     public static void CompleteDbSenderTask(int id)
     {
-        string query = $"UPDATE {SenderTaskTable} SET status = 0 WHERE id = {id};";
+        string query = $"UPDATE {SenderTaskTable} SET status = {(int)Status.SUCCESS} WHERE id = {id};";
 
         connection.Open();
 
@@ -139,7 +139,7 @@ public class Helper
 
     public static void AddDbSenderTask(string device, string address, decimal amount)
     {
-        string query = $"INSERT INTO {SenderTaskTable} (device, address, amount, status) VALUES ('{device}', '{address}', {amount}, 1);";
+        string query = $"INSERT INTO {SenderTaskTable} (device, address, amount, status) VALUES ('{device}', '{address}', {amount}, {(int)Status.FAILURE});";
 
         connection.Open();
 

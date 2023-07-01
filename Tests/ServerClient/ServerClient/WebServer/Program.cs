@@ -1,4 +1,4 @@
-using WebServer;
+using static WebServer.Helper;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +18,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-// Task task = Task.Run(() => Helper.ProcessDbSenderTasks());
+Task task = Task.Run(() => ProcessDbSenderTasks());
 
 app.Run();

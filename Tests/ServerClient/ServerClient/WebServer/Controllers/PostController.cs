@@ -26,13 +26,10 @@ public class PostController : ControllerBase
 
         if (amount != 0 && address != null)
         {
-            // AddDbSenderTask(id, address, amount);
+            AddDbSenderTask(id, address, amount);
             return Ok($"Db sender task added!");
         }
-
-        Console.WriteLine($"Status.SUCCESS {Status.SUCCESS}");
-        Console.WriteLine($"Status.FAILURE {Status.FAILURE}");
-
+        
         return Ok("");
     }
 }
