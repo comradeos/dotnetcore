@@ -49,6 +49,7 @@ public class Helper
                 } else
                 {
                     FailureMessage($"Task id {task.Id} failed to complete!");
+                    Environment.Exit(0);
                 }
             }
             Thread.Sleep(500);
