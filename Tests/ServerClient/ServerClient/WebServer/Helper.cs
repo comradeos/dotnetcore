@@ -2,6 +2,12 @@
 
 namespace WebServer;
 
+enum Status
+{
+    SUCCESS,
+    FAILURE
+}
+
 public class Helper
 {
     private static readonly SqliteConnection connection = new("Data Source=database.db");

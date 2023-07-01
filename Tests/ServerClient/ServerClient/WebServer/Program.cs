@@ -18,6 +18,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-Task task = Task.Run(() => Helper.ProcessDbSenderTasks());
+// Task task = Task.Run(() => Helper.ProcessDbSenderTasks());
 
 app.Run();
