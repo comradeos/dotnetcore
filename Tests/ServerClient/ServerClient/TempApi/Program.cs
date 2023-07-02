@@ -19,6 +19,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 Task task1 = Task.Run(() => Helper.TasksCounter());
-Task task2 = Task.Run(() => Helper.RemoveTask());
+// Task task2 = Task.Run(() => Helper.RemoveTask());
 
 app.Run();
