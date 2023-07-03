@@ -49,7 +49,6 @@ public class DataBase
         {
             command = new(query, connection);
             command.ExecuteNonQuery();
-            Console.WriteLine("yes");
         }
         catch
         {
