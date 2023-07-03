@@ -18,6 +18,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-Task task = Task.Run(() => ProcessDbSenderTasks());
+// Task task = Task.Run(() => ProcessDbSenderTasks());
+Task task = Task.Run(() => queueManager.ProcessTasks());
 
 app.Run();

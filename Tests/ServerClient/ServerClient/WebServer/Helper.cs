@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.Sqlite;
+using System.Collections.Concurrent;
 
 namespace WebServer;
 
@@ -13,6 +14,8 @@ public class Helper
     private static readonly SqliteConnection connection = new("Data Source=database.db");
     private static readonly string SenderTaskTable = "sender_tasks";
     private static readonly string SenderLogTable = "sender_log";
+
+    public static QueueManager queueManager = new();
 
     private static readonly HttpClient httpClient = new();
 
@@ -66,6 +69,27 @@ public class Helper
         catch { }
 
         return responseString;
+    }
+
+    public static void Send(decimal amount, string address)
+    {
+        HttpClient httpClient = new();
+
+        string responseString = "failed";
+
+        while (responseString == "failed")
+        {
+            try
+            {
+                responseString = httpClient.GetStringAsync($"{address}/?amount={amount}").Result;
+            }
+            catch { }
+
+            // return responseString;
+            Thread.Sleep (500);
+        }
+
+        Console.WriteLine("Done!");
     }
 
     public static List<SenderTask> GetDbSenderTasks()

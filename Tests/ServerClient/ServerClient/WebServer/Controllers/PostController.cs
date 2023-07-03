@@ -26,8 +26,11 @@ public class PostController : ControllerBase
 
         if (amount != 0 && address != null)
         {
-            AddDbSenderTask(id, address, amount);
-            return Ok($"Db sender task added!");
+            // AddDbSenderTask(id, address, amount);
+            // return Ok($"Db sender task added!");
+
+            Task task = Task.Run(() => Send(amount, address));
+            queueManager.AddTask(id, task);
         }
         
         return Ok("");
