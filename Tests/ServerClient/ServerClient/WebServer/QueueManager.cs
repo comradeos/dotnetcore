@@ -18,6 +18,7 @@ public class QueueManager
             foreach (KeyValuePair <string,Task> item in tasks)
             {
                 string id = item.Key;
+
                 Task task = item.Value;
 
                 if (task.IsCompleted)

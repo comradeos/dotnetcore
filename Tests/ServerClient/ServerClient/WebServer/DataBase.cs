@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.Sqlite;
+using WebServer.Models;
 
 namespace WebServer;
 

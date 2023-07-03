@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z9j23m8OrnhdW8kNjdpS4rRPe2zBzee4oXE2hwiehf9NgBw03e0Aj/53HkEXxeQJRyYkUVoOGqCFC0yYkUwHWg==",
+  "dgSpecHash": "e9WgO/ejdiQCelOC4pc4HRUzb9eoQ7cFY3wa0DyEt/vnUMM1eX0z7UsmVh0O3i5IpSOS+FYuxB+YSxxK3VVkBw==",
   "success": true,
-  "projectFilePath": "/Users/comradeos/Workspace/dotnetcore/Tests/ServerClient/ServerClient/AppClient2/AppClient2.csproj",
+  "projectFilePath": "C:\\Workspace\\dotnetcore\\Tests\\ServerClient\\ServerClient\\AppClient2\\AppClient2.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

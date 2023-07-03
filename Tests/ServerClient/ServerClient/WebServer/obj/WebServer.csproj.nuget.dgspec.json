@@ -1,28 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/comradeos/Workspace/dotnetcore/Tests/ServerClient/ServerClient/WebServer/WebServer.csproj": {}
+    "C:\\Workspace\\dotnetcore\\Tests\\ServerClient\\ServerClient\\WebServer\\WebServer.csproj": {}
   },
   "projects": {
-    "/Users/comradeos/Workspace/dotnetcore/Tests/ServerClient/ServerClient/WebServer/WebServer.csproj": {
+    "C:\\Workspace\\dotnetcore\\Tests\\ServerClient\\ServerClient\\WebServer\\WebServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/comradeos/Workspace/dotnetcore/Tests/ServerClient/ServerClient/WebServer/WebServer.csproj",
+        "projectUniqueName": "C:\\Workspace\\dotnetcore\\Tests\\ServerClient\\ServerClient\\WebServer\\WebServer.csproj",
         "projectName": "WebServer",
-        "projectPath": "/Users/comradeos/Workspace/dotnetcore/Tests/ServerClient/ServerClient/WebServer/WebServer.csproj",
-        "packagesPath": "/Users/comradeos/.nuget/packages/",
-        "outputPath": "/Users/comradeos/Workspace/dotnetcore/Tests/ServerClient/ServerClient/WebServer/obj/",
+        "projectPath": "C:\\Workspace\\dotnetcore\\Tests\\ServerClient\\ServerClient\\WebServer\\WebServer.csproj",
+        "packagesPath": "C:\\Users\\comradeos\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\dotnetcore\\Tests\\ServerClient\\ServerClient\\WebServer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/comradeos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\comradeos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/comradeos/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -68,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
