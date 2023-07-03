@@ -26,7 +26,6 @@ public class QueueManager
                 }
             }
 
-            Console.WriteLine($"Tasks: {tasks.Count}");
             Thread.Sleep(1000);
         }
     }

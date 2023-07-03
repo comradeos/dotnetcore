@@ -29,7 +29,7 @@ public class PostController : ControllerBase
             // AddDbSenderTask(id, address, amount);
             // return Ok($"Db sender task added!");
 
-            Task task = Task.Run(() => Send(amount, address));
+            Task task = Task.Run(() => Send(id, amount, address));
             queueManager.AddTask(id, task);
         }
         

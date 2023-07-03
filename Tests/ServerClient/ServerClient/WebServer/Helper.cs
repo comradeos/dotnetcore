@@ -1,5 +1,4 @@
 ﻿using Microsoft.Data.Sqlite;
-using System.Collections.Concurrent;
 
 namespace WebServer;
 
@@ -58,6 +57,31 @@ public class Helper
         }
     }
 
+    public static void Send(string device, decimal amount, string address)
+    {
+        long? rowId = DataBase.Add(device, address, amount);
+
+        HttpClient httpClient = new();
+
+        string? responseString = null;
+
+        while (responseString == null)
+        {
+            try
+            {
+                responseString = httpClient.GetStringAsync($"{address}/?amount={amount}").Result;
+            }
+            catch { }
+
+            Thread.Sleep(500);
+        }
+
+        if (rowId != null)
+        {
+            DataBase.Complete((long)rowId);
+        }
+    }
+
     public static string SendData(decimal amount, string address)
     {
         string responseString = "failed";
@@ -69,27 +93,6 @@ public class Helper
         catch { }
 
         return responseString;
-    }
-
-    public static void Send(decimal amount, string address)
-    {
-        HttpClient httpClient = new();
-
-        string responseString = "failed";
-
-        while (responseString == "failed")
-        {
-            try
-            {
-                responseString = httpClient.GetStringAsync($"{address}/?amount={amount}").Result;
-            }
-            catch { }
-
-            // return responseString;
-            Thread.Sleep (500);
-        }
-
-        Console.WriteLine("Done!");
     }
 
     public static List<SenderTask> GetDbSenderTasks()
@@ -163,7 +166,8 @@ public class Helper
 
     public static void AddDbSenderTask(string device, string address, decimal amount)
     {
-        string query = $"INSERT INTO {SenderTaskTable} (device, address, amount, status) VALUES ('{device}', '{address}', {amount}, {(int)Status.FAILURE});";
+        string query = $"INSERT INTO {SenderTaskTable} (device, address, amount, status) " +
+            $"VALUES ('{device}', '{address}', {amount}, {(int)Status.FAILURE});";
 
         connection.Open();
 
