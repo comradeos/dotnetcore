@@ -16,24 +16,19 @@ public class DataBase
             $"VALUES ('{device}', '{address}', {amount}, {(int)Status.FAILURE});" +
             $"SELECT last_insert_rowid();";
 
-        connection.Open();
-
-        SqliteCommand command;
-
         try
         {
-            command = new(query, connection);
-            // command.ExecuteNonQuery();
+            connection.Open();
+            SqliteCommand command = new(query, connection);
             object? indexObj = command.ExecuteScalar();
             index = (indexObj != null) ? (long)indexObj : index;
+            connection.Close();
         }
         catch
         {
-            Console.WriteLine("Can't add db sender task!");
+            Console.WriteLine($"Can't add db sender task: Send {amount} UAH to {device} ({address})!");
         }
-
-        connection.Close();
-
+        
         return index;
     }
 
@@ -41,21 +36,17 @@ public class DataBase
     {
         string query = $"UPDATE {SenderTaskTable} SET status = {(int)Status.SUCCESS} WHERE id = {id};";
 
-        connection.Open();
-
-        SqliteCommand command;
-
         try
         {
-            command = new(query, connection);
+            connection.Open();
+            SqliteCommand command = new(query, connection);
             command.ExecuteNonQuery();
+            connection.Close();
         }
         catch
         {
-            Console.WriteLine("Can't complete db sender task!");
+            Console.WriteLine($"Can't complete db sender task id: {id}!");
         }
-
-        connection.Close();
     }
 }
 
