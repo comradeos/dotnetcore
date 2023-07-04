@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "AppClient/1.0.0": {
+      "AppClient3/1.0.0": {
         "runtime": {
-          "AppClient.dll": {}
+          "AppClient3.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "AppClient/1.0.0": {
+    "AppClient3/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
