@@ -175,3 +175,4 @@ C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\WebServer\obj\Debug\net6
 C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\WebServer\obj\Debug\net6.0\WebServer.pdb
 C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\WebServer\obj\Debug\net6.0\WebServer.genruntimeconfig.cache
 C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\WebServer\obj\Debug\net6.0\ref\WebServer.dll
+C:\Workspace\dotnetcore\Tests\ServerClient\ServerClient\WebServer\bin\Debug\net6.0\appdevices.json
