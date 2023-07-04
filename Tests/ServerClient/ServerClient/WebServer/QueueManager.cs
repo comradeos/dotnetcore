@@ -4,7 +4,7 @@ namespace WebServer;
 
 public class QueueManager
 {
-    private ConcurrentDictionary<string,Task> tasks = new();
+    private readonly ConcurrentDictionary<string,Task> tasks = new();
 
     public void AddTask(string id, Task task)
     {
@@ -27,6 +27,7 @@ public class QueueManager
                 }
             }
 
+            Console.Write($"\r Counter: {tasks.Count}");
             Thread.Sleep(1000);
         }
     }
