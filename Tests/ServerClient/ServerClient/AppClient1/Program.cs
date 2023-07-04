@@ -1,44 +1,93 @@
 ﻿using System.Net;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
-string appName = "AppClient1";
+namespace AppClient;
 
-string startMessage = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Application '{appName}' started!";
-Console.WriteLine(startMessage);
-
-HttpListener listener = new();
-
-listener.Prefixes.Add("http://127.0.0.1:8881/");
-listener.Start();
-
-while (true)
+public class Program
 {
-    HttpListenerContext context = await listener.GetContextAsync();
+    private static readonly Settings settings = new();
+    private static readonly HttpListener listener = new();
 
-    string? amount = context.Request.QueryString["amount"];
-
-    byte[] outputBytes = Encoding.UTF8.GetBytes("Ok");
-
-    if (amount != null)
+    public static async Task Main()
     {
-        outputBytes = Encoding.UTF8.GetBytes($"Received {amount} UAH!");
+        string startMessage = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Application '{settings.Name}' started!";
+        Console.WriteLine(startMessage);
+
+        listener.Prefixes.Add(settings.Address);
+        listener.Start();
+
+        while (true)
+        {
+            HttpListenerContext context = await listener.GetContextAsync();
+
+            string? amount = context.Request.QueryString["amount"];
+
+            byte[] outputBytes = Encoding.UTF8.GetBytes("Ok");
+
+            if (amount != null)
+            {
+                outputBytes = Encoding.UTF8.GetBytes($"Received {amount} UAH!");
+            }
+
+            string outputString = Encoding.UTF8.GetString(outputBytes);
+
+            context.Response.StatusCode = 200;
+            context.Response.KeepAlive = false;
+            context.Response.ContentLength64 = outputBytes.Length;
+
+            Stream output = context.Response.OutputStream;
+
+            output.Write(outputBytes, 0, outputBytes.Length);
+            context.Response.Close();
+
+            string time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+            if (amount != null)
+            {
+                Console.WriteLine($"[{time}] {outputString}");
+            }
+        }
     }
+}
 
-    string outputString = Encoding.UTF8.GetString(outputBytes);
+public class SettingsModel
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; } = default!;
+    [JsonPropertyName("address")]
+    public string Address { get; set; } = default!;
+}
 
-    context.Response.StatusCode = 200;
-    context.Response.KeepAlive = false;
-    context.Response.ContentLength64 = outputBytes.Length;
+public class Settings
+{
+    private static readonly string SettingsPath = "../../../settings.json";
+    public string Name { get; set; } = default!;
+    public string Address { get; set; } = default!;
 
-    Stream output = context.Response.OutputStream;
-
-    output.Write(outputBytes, 0, outputBytes.Length);
-    context.Response.Close();
-
-    string time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
-    if (amount != null)
+    public Settings()
     {
-        Console.WriteLine($"[{time}] {outputString}");
+        SettingsModel? settingsModel;
+
+        using (StreamReader streamReader = new(SettingsPath))
+        {
+            settingsModel = JsonSerializer.Deserialize<SettingsModel>(streamReader.ReadToEnd());
+        }
+
+        if (string.IsNullOrEmpty(settingsModel?.Name))
+        {
+            Console.WriteLine("settings.json error: 'name' not found");
+            Environment.Exit(0);
+        }
+
+        if (string.IsNullOrEmpty(settingsModel?.Address))
+        {
+            Console.WriteLine("settings.json error: 'address' not found");
+            Environment.Exit(0);
+        }
+
+        Name = settingsModel.Name;
+        Address = settingsModel.Address;
     }
 }
