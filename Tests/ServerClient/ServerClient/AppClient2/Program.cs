@@ -9,10 +9,10 @@ public class Program
 {
     private static readonly Settings settings = new();
     private static readonly HttpListener listener = new();
+    private static readonly string startMessage = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Program '{settings.Name}' started!";
 
     public static async Task Main()
     {
-        string startMessage = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Application '{settings.Name}' started!";
         Console.WriteLine(startMessage);
 
         listener.Prefixes.Add(settings.Address);
