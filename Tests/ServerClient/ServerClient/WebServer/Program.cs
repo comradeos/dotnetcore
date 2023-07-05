@@ -6,6 +6,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// builder.Services.Configure<List<DevicesListItem>>(builder.Configuration.GetSection("DevicesList"));
+
 WebApplication app = builder.Build();
 
 if (app.Environment.IsDevelopment())
