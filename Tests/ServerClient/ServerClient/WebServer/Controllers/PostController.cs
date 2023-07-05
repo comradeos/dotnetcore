@@ -9,12 +9,9 @@ public class PostController : ControllerBase
 {
     private readonly IConfiguration _configuration;
 
-    public List<DevicesListItem> _devices;
-
     public PostController(IConfiguration configuration)
     {
         _configuration = configuration;
-        _devices = _configuration.GetSection("DevicesList").Get<List<DevicesListItem>>();
     }
 
     [HttpPost(Name = "Post")]
@@ -26,18 +23,14 @@ public class PostController : ControllerBase
         try { amount = Convert.ToDecimal(Request.Form["amount"]); } 
         catch { Console.WriteLine("Can't convert amount!"); }
 
-        string? address = _configuration.GetValue<string>($"Devices:{id}");
-        // Console.WriteLine($"appDevices.Count: {appDevices?.devices?.Count}");
-        // string? address = appDevices?.devices?.Find(i => i.Id == id)?.Address;
+        // string? address = _configuration.GetValue<string>($"Devices:{id}");
 
-        /*
         string? address = _configuration
             .GetSection("DevicesList")
             .Get<List<DevicesListItem>>()
             .Find(i => i.Id == id)?
             .Address;
-        */
-
+  
         if (amount != 0 && address != null)
         {
             Task task = Task.Run(() => Send(id, amount, address));
