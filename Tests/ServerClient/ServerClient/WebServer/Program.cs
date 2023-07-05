@@ -6,8 +6,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// builder.Services.Configure<List<DevicesListItem>>(builder.Configuration.GetSection("DevicesList"));
-
 WebApplication app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -20,7 +18,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-// Task task = Task.Run(() => ProcessDbSenderTasks());
 Task task = Task.Run(() => queueManager.ProcessTasks());
 
 app.Run();

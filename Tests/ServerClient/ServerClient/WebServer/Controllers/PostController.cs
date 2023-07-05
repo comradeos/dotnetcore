@@ -26,52 +26,23 @@ public class PostController : ControllerBase
         try { amount = Convert.ToDecimal(Request.Form["amount"]); } 
         catch { Console.WriteLine("Can't convert amount!"); }
 
-        // string? address = _configuration.GetValue<string>($"Devices:{id}");
+        string? address = _configuration.GetValue<string>($"Devices:{id}");
         // Console.WriteLine($"appDevices.Count: {appDevices?.devices?.Count}");
         // string? address = appDevices?.devices?.Find(i => i.Id == id)?.Address;
 
+        /*
         string? address = _configuration
             .GetSection("DevicesList")
             .Get<List<DevicesListItem>>()
             .Find(i => i.Id == id)?
             .Address;
-
-        /*
-        string? address = null;
-
-        foreach (DevicesListItem device in _devices)
-        {
-            Console.WriteLine($"Comparing {device.Id} to {id}: {device.Id == id}");
-            if (device.Id == id) 
-            {
-                address = device.Address;
-                break;
-            } 
-        }
-
         */
 
-        Console.WriteLine($"id: {id}");
-        Console.WriteLine($"amount: {amount}");
-        Console.WriteLine($"address: {address ?? "null/empty"}");
-        
         if (amount != 0 && address != null)
         {
             Task task = Task.Run(() => Send(id, amount, address));
             queueManager.AddTask(id, task);
         }
-
-        /*
-        List<DevicesListItem> tmpList = _configuration
-            .GetSection("DevicesList")
-            .Get<List<DevicesListItem>>();
-        Console.WriteLine($"{tmpList.Count} tmpList");
-        
-        foreach (var item in _devices)
-        {
-            Console.WriteLine($"{item.Id} {item.Address}");
-        }
-        */
 
         return Ok("");
     }

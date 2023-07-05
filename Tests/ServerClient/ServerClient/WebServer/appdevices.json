@@ -1,6 +1,0 @@
-[
-  { "id":  "AppCilent0", "address": "http://127.0.0.1:8880/"},
-  { "id":  "AppCilent1", "address": "http://127.0.0.1:8881/"},
-  { "id":  "AppCilent2", "address": "http://127.0.0.1:8882/"},
-  { "id":  "AppCilent3", "address": "http://127.0.0.1:8883/"}
-]
