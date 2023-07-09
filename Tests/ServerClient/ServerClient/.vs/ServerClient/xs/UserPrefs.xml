@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{60A487C9-21A2-4FD8-B72C-45E977F56D00}|Default">
+  <MonoDevelop.Ide.ItemProperties.AppClient2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebServer/Controllers/PostController.cs">
+    <Files>
+      <File FileName="WebServer/Controllers/PostController.cs" Line="14" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ServerClient">
+            <Node name="AppClient1" expanded="True" />
+            <Node name="WebServer" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="PostController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AppClient PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.AppClient3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.AppClient1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
