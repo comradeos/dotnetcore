@@ -6,7 +6,7 @@ public class MyClass
     public string Name { get; set; }
 }
 
-public class Operators
+public static class Operators
 {
     public static void Tests()
     {
@@ -17,7 +17,10 @@ public class Operators
         };
         
         System.Console.WriteLine("----------");
-        System.Console.WriteLine(myObj is MyClass);
+        if (myObj is MyClass aaa)
+        {
+            System.Console.WriteLine(aaa.Name);
+        }
         System.Console.WriteLine("----------");
         
     }
