@@ -17,9 +17,9 @@ public static class Operators
         };
         
         System.Console.WriteLine("----------");
-        if (myObj is MyClass aaa)
+        if (myObj is MyClass inst)
         {
-            System.Console.WriteLine(aaa.Name);
+            System.Console.WriteLine(inst.Name);
         }
         System.Console.WriteLine("----------");
         
