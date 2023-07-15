@@ -5,6 +5,7 @@ public static class Program
     public static void Main()
     {
         // Lists.Tests();
-        Operators.Tests();
+        // Operators.Tests();
+        ClassRec.Tests();
     }
 }
