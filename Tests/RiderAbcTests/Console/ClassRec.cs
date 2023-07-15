@@ -12,7 +12,19 @@ public static class ClassRec
     {
         ClassRecTest crt = new()
         {
-            Number = 25
+            Number = 1,
+            Obj = new ClassRecTest
+            {
+                Number = 11,
+                Obj = new ClassRecTest()
+                {
+                    Number = 12,
+                    Obj = new ClassRecTest()
+                    {
+                        Number = 13,
+                    }
+                }
+            }
         };
 
         ClassRecTest classRecTest = new()
@@ -22,7 +34,6 @@ public static class ClassRec
         };
 
         System.Console.WriteLine(classRecTest.Number);
-        System.Console.WriteLine(classRecTest.Obj.Number);
-
+        System.Console.WriteLine(classRecTest.Obj.Obj.Obj.Obj.Number);
     }
 }
