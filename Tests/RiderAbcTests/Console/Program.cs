@@ -6,6 +6,7 @@ public static class Program
     {
         // Lists.Tests();
         // Operators.Tests();
-        ClassRec.Tests();
+        // ClassRec.Tests();
+        MathOps.Tests();
     }
 }
