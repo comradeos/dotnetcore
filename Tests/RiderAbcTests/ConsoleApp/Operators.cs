@@ -1,5 +1,4 @@
-﻿namespace Console;
-
+﻿namespace ConsoleApp;
 public class MyClass
 {
     public int Id { get; set; }

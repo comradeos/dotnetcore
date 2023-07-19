@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\dotnetcore\\Tests\\RiderAbcTests\\Console\\Console.csproj",
-      "projectName": "Console",
-      "projectPath": "C:\\Workspace\\dotnetcore\\Tests\\RiderAbcTests\\Console\\Console.csproj",
+      "projectUniqueName": "C:\\Workspace\\dotnetcore\\Tests\\RiderAbcTests\\ConsoleApp\\ConsoleApp.csproj",
+      "projectName": "ConsoleApp",
+      "projectPath": "C:\\Workspace\\dotnetcore\\Tests\\RiderAbcTests\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\comradeos\\.nuget\\packages\\",
-      "outputPath": "C:\\Workspace\\dotnetcore\\Tests\\RiderAbcTests\\Console\\obj\\",
+      "outputPath": "C:\\Workspace\\dotnetcore\\Tests\\RiderAbcTests\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

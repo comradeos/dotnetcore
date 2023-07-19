@@ -1,4 +1,4 @@
-﻿namespace Console;
+﻿namespace ConsoleApp;
 
 public class Item
 {
