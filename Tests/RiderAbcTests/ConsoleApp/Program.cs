@@ -7,6 +7,7 @@ public static class Program
         // Lists.Tests();
         // Operators.Tests();
         // ClassRec.Tests();
-        MathOps.Tests();
+        // MathOps.Tests();
+        Constructors.Tests();
     }
 }

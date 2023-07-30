@@ -1,0 +1,15 @@
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\bin\Debug\net6.0\ConsoleApp.exe
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\bin\Debug\net6.0\ConsoleApp.deps.json
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\bin\Debug\net6.0\ConsoleApp.runtimeconfig.json
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\bin\Debug\net6.0\ConsoleApp.dll
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\bin\Debug\net6.0\ConsoleApp.pdb
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.csproj.AssemblyReference.cache
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.AssemblyInfo.cs
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.dll
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\refint\ConsoleApp.dll
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.pdb
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ConsoleApp.genruntimeconfig.cache
+C:\Workspace\dotnetcore\Tests\RiderAbcTests\ConsoleApp\obj\Debug\net6.0\ref\ConsoleApp.dll
