@@ -1,0 +1,15 @@
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/bin/Debug/net6.0/ConsoleApp
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/bin/Debug/net6.0/ConsoleApp.deps.json
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/bin/Debug/net6.0/ConsoleApp.runtimeconfig.json
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/bin/Debug/net6.0/ConsoleApp.dll
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/bin/Debug/net6.0/ConsoleApp.pdb
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.csproj.AssemblyReference.cache
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.dll
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/refint/ConsoleApp.dll
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.pdb
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ConsoleApp.genruntimeconfig.cache
+/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/Debug/net6.0/ref/ConsoleApp.dll

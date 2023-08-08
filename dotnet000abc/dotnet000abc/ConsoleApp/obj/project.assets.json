@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/comradeos/Workspace/dotnetcore/Tests/ABCTests/NetCoreConsole/NetCoreConsole.csproj",
-      "projectName": "NetCoreConsole",
-      "projectPath": "/Users/comradeos/Workspace/dotnetcore/Tests/ABCTests/NetCoreConsole/NetCoreConsole.csproj",
+      "projectUniqueName": "/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/ConsoleApp.csproj",
+      "projectName": "ConsoleApp",
+      "projectPath": "/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/ConsoleApp.csproj",
       "packagesPath": "/Users/comradeos/.nuget/packages/",
-      "outputPath": "/Users/comradeos/Workspace/dotnetcore/Tests/ABCTests/NetCoreConsole/obj/",
+      "outputPath": "/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/comradeos/.nuget/NuGet/NuGet.Config"
