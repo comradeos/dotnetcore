@@ -6,7 +6,8 @@ public static class Program
 {
     public static void Main()
     {
-        DotnetInheritance.Test();
-        DotnetPolymorphism.Test();
+        // DotnetInheritance.Test();
+        // DotnetPolymorphism.Test();
+        TryGetByValuesProperty.Test();
     }
 }
