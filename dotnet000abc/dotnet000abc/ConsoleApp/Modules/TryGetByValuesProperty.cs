@@ -25,8 +25,8 @@ public class TryGetByValuesProperty
         dict.Add(1, mc1);
         dict.Add(2, mc2);
 
-        var res = dict.Where(i => i.Value.Name == "a")
-            .Select(i=>i.Value);
+        MyClass res = dict.Where(i => i.Value.Name == "a")
+            .Select(i=>i.Value).ToList()[0];
 
         Console.WriteLine(dict.Count);
     }
