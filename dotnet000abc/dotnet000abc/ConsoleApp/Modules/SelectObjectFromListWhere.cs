@@ -8,7 +8,7 @@ internal class ItemObject
     public string Name { get; set; } = default!;
 }
 
-public class SelectObjectFromListWhere
+public static class SelectObjectFromListWhere
 {
     public static void Test()
     {
