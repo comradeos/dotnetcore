@@ -8,6 +8,7 @@ public static class Program
     {
         // DotnetInheritance.Test();
         // DotnetPolymorphism.Test();
-        TryGetByValuesProperty.Test();
+        // TryGetByValuesProperty.Test();
+        SelectObjectFromListWhere.Test();
     }
 }
