@@ -9,6 +9,7 @@ public static class Program
         // DotnetInheritance.Test();
         // DotnetPolymorphism.Test();
         // TryGetByValuesProperty.Test();
-        SelectObjectFromListWhere.Test();
+        // SelectObjectFromListWhere.Test();
+        MergingDictionaries.Test();
     }
 }
