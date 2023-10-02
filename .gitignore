@@ -1,2 +1,7 @@
 .DS_Store
 auto_commits.py
+Tests/ValidPassCounter/ValidPassCounter/ValidPassCounter/bin/Debug/net7.0/*.json
+Tests/ValidPassCounter/ValidPassCounter/ValidPassCounter/bin/Debug/net7.0/*.dll
+Tests/ValidPassCounter/ValidPassCounter/ValidPassCounter/bin/Debug/net7.0/*.pdb
+Tests/ValidPassCounter/ValidPassCounter/ValidPassCounter/bin/Debug/net7.0/*.exe
+Tests/ValidPassCounter/ValidPassCounter/ValidPassCounter/obj
