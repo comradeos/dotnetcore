@@ -10,6 +10,7 @@ public static class Program
         // DotnetPolymorphism.Test();
         // TryGetByValuesProperty.Test();
         // SelectObjectFromListWhere.Test();
-        MergingDictionaries.Test();
-    }
+        // MergingDictionaries.Test();
+        ListOperations.Test();
+    }   
 }
