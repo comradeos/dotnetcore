@@ -12,6 +12,7 @@ public static class Program
         // SelectObjectFromListWhere.Test();
         // MergingDictionaries.Test();
         // ListOperations.Test();
-        IndexOfSeveralProperties.Test();
+        // IndexOfSeveralProperties.Test();
+        ListToStringCommaSeparated.Test();
     }   
 }
