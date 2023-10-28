@@ -13,6 +13,6 @@ public static class Program
         // MergingDictionaries.Test();
         // ListOperations.Test();
         // IndexOfSeveralProperties.Test();
-        ListToStringCommaSeparated.Test();
+        AttributesBasics.Test();
     }   
 }
