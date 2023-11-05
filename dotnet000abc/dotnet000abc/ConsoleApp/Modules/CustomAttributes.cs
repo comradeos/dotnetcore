@@ -17,7 +17,7 @@ public static class CustomAttributes
             {
                 if (attribute is CustomAttribute customAttribute)
                 {
-                    Console.WriteLine($"Hey this one has a custom attribute ---> {customAttribute.Value}");
+                    Console.WriteLine($"Hey this one has a custom attribute -----> {customAttribute.Value}");
                 }
             }
         }
