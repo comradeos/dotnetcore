@@ -13,6 +13,7 @@ public static class Program
         // MergingDictionaries.Test();
         // ListOperations.Test();
         // IndexOfSeveralProperties.Test();
-        AttributesBasics.Test();
+        // AttributesBasics.Test();
+        CustomAttributes.Test();
     }   
 }
