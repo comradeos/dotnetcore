@@ -7,3 +7,4 @@ Tests/ValidPassCounter/ValidPassCounter/ValidPassCounter/bin/Debug/net7.0/*.exe
 Tests/ValidPassCounter/ValidPassCounter/ValidPassCounter/obj
 dotnet000abc/dotnet000abc/ConsoleApp/bin/*
 dotnet000abc/dotnet000abc/PasswordFileReader/bin/*
+dotnet000abc/dotnet000abc/ConsoleApp/bin/Debug/net6.0/*
