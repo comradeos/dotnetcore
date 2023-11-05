@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W8Wo9rpB3mS7ZebUT5LVF/Mkosi4vfBtaMPNUIHXpLDSANXFWBJP+hkugZkhbnlinfXMYGfU8Ey9gxGBmVn5jw==",
+  "dgSpecHash": "Osv7RC3mg2dziGJaALTk9CTY8P7tOGJforL55WkpMAwlMZrPt4JxSwP5MaGiriuKRA9osbkaP/8vKueTnR4wJw==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\dotnetcore\\dotnet000abc\\dotnet000abc\\ConsoleApp\\ConsoleApp.csproj",
+  "projectFilePath": "/Users/comradeos/Workspace/dotnetcore/dotnet000abc/dotnet000abc/ConsoleApp/ConsoleApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
