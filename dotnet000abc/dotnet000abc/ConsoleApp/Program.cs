@@ -11,9 +11,10 @@ public static class Program
         // TryGetByValuesProperty.Test();
         // SelectObjectFromListWhere.Test();
         // MergingDictionaries.Test();
-        ListOperations.Test();
+        // ListOperations.Test();
         // IndexOfSeveralProperties.Test();
         // AttributesBasics.Test();
         // CustomAttributes.Test();
+        Abstractions.Test();
     }   
 }
