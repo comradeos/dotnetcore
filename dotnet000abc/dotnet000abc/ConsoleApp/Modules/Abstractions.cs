@@ -4,23 +4,46 @@ public static class Abstractions
 {
     public static void Test()
     {
-        T10Human p = new T10Human();
-        p.SayHello();
+        Employee_abs iaroslavOs = new("Iaroslav Os", 33);
+        iaroslavOs.SayHello();
     }
 }
 
-internal abstract class T10Person
+interface ICreature_abs
 {
+    string name { get; set; }
+    int age { get; set; }
+
+    void SayHello();
+
+}
+
+abstract class Human_abs : ICreature_abs
+{
+    public string name { get; set; } = "unknown";
+    public int age { get; set; }
+
     public void SayHello()
     {
-        Console.WriteLine("hello!22");
+        Console.WriteLine("Hello, I am a human!");
     }
 }
 
-internal class T10Human : T10Person
+class Employee_abs : Human_abs
 {
-    public new void SayHello()
+    public Employee_abs(string name, int age)
     {
-        Console.WriteLine("hellodsds2");
+        this.name = name;
+        this.age = age;
+    }
+
+    public void SayHello()
+    {
+        Console.WriteLine($"Hello, my name is {this.name}, I am {this.age} years old!");
+    }
+    
+    public void SayHello(int arg)
+    {
+        Console.WriteLine($"It's arg.... {arg}");
     }
 }
