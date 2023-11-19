@@ -1,6 +1,7 @@
 ﻿namespace  ConsoleApp;
 
 using Modules;
+using Patterns;
 
 public static class Program
 {
@@ -15,6 +16,8 @@ public static class Program
         // IndexOfSeveralProperties.Test();
         // AttributesBasics.Test();
         // CustomAttributes.Test();
-        Abstractions.Test();
+        // Abstractions.Test();
+        // AbstractFactory.Test();
+        Builder.Test();
     }   
 }
