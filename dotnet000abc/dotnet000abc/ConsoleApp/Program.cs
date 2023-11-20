@@ -18,6 +18,7 @@ public static class Program
         // CustomAttributes.Test();
         // Abstractions.Test();
         // AbstractFactory.Test();
-        Builder.Test();
+        // Builder.Test();
+        FactoryMethod.Test();
     }   
 }
