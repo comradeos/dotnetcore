@@ -35,3 +35,7 @@ dotnet ef database update
 ```
 dotnet ef migrations remove
 ```
+### Restore nuget packages? Test!
+```
+dotnet restore
+```
