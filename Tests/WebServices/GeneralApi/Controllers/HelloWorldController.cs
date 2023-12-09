@@ -16,7 +16,7 @@ namespace GeneralApi.Controllers
             _myDbContext = context;
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int?}")]
         public ActionResult<MyData> Get()
         {
             /* Create new entry in database
