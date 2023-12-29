@@ -19,6 +19,7 @@ public static class Program
         // Abstractions.Test();
         // AbstractFactory.Test();
         // Builder.Test();
-        FactoryMethod.Test();
+        // FactoryMethod.Test();
+        EnumNames.Test();
     }   
 }
