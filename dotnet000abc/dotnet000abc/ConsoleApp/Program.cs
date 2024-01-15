@@ -20,6 +20,9 @@ public static class Program
         // AbstractFactory.Test();
         // Builder.Test();
         // FactoryMethod.Test();
-        EnumNames.Test();
+        // EnumNames.Test();
+        // RaceCondition.Test();
+        MutexTest.Test();
+        
     }   
 }
