@@ -22,7 +22,8 @@ public static class Program
         // FactoryMethod.Test();
         // EnumNames.Test();
         // RaceCondition.Test();
-        MutexTest.Test();
+        // MutexTest.Test();
+        AsyncLocalTest.Test();
         
     }   
 }
