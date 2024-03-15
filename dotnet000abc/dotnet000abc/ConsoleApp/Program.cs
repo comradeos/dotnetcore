@@ -23,7 +23,8 @@ public static class Program
         // EnumNames.Test();
         // RaceCondition.Test();
         // MutexTest.Test();
-        AsyncLocalTest.Test();
+        // AsyncLocalTest.Test();
+        DictionaryJsonEncode.Test();
         
     }   
 }
