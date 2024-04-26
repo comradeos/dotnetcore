@@ -24,7 +24,8 @@ public static class Program
         // RaceCondition.Test();
         // MutexTest.Test();
         // AsyncLocalTest.Test();
-        DictionaryJsonEncode.Test();
+        // DictionaryJsonEncode.Test();
+        IntDecimal.Test();
         
     }   
 }
