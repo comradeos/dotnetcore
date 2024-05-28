@@ -25,7 +25,8 @@ public static class Program
         // MutexTest.Test();
         // AsyncLocalTest.Test();
         // DictionaryJsonEncode.Test();
-        IntDecimal.Test();
+        // IntDecimal.Test();
+        TestController.Test();
         
     }   
 }
