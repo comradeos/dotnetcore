@@ -1,4 +1,6 @@
+using System; // Add this line
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 
 namespace AvaloniaHelloWorld.Views;
 
@@ -6,8 +8,11 @@ public partial class MainWindow : Window
 {
     public MainWindow()
     {
-        // this.WindowState = Avalonia.Controls.WindowState.FullScreen;
-        // this.WindowState = Avalonia.Controls.WindowState.Maximized;
         InitializeComponent();
+    }
+    
+    public void NewButton_Click(object sender, RoutedEventArgs e)
+    {
+        Console.WriteLine("From New Button");
     }
 }
