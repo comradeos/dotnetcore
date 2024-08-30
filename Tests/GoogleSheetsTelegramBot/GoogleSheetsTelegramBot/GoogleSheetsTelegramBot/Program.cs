@@ -2,75 +2,83 @@
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
-using Google.Apis.Util.Store;
-using System;
-using System.IO;
-using System.Threading;
+using static Google.Apis.Sheets.v4.SpreadsheetsResource.ValuesResource;
 
-namespace GoogleSheetsTelegramBot;
-
-public static class Program
+namespace GoogleSheetsTelegramBot
 {
-    static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
-    static readonly string ApplicationName = "Google Sheets API .NET Quickstart";
-    static readonly string SpreadsheetId = "1vkTdABlZA_r1aKM92BScmWfH2hD0B0mhCSlH73ejMSo";
-    static readonly string SheetName = "Sheet1";
-    static SheetsService service;
-
-    static void Main(string[] args)
+    public static class Program
     {
-        GoogleCredential credential;
-        
-        // Загрузка учетных данных
-        using (var stream = new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
+        private static readonly string[] Scopes = [SheetsService.Scope.Spreadsheets];
+        private const string ApplicationName = "Google Sheets API .NET Quickstart";
+        private const string SpreadsheetId = "1m92Mr5_XkD6GQ7q04uYKPYXcjSnI3ncjj6luuMo1SHc";
+        private const string SheetName = "Sheet1";
+        private static SheetsService? _service;
+
+        private static void Main(string[] args)
         {
-            credential = GoogleCredential.FromStream(stream)
-                .CreateScoped(Scopes);
-        }
+            GoogleCredential credential;
 
-        // Создание службы Google Sheets API
-        service = new SheetsService(new BaseClientService.Initializer()
-        {
-            HttpClientInitializer = credential,
-            ApplicationName = ApplicationName,
-        });
-
-        ReadEntries();
-        WriteEntries();
-    }
-
-    static void ReadEntries()
-    {
-        var range = $"{SheetName}!A1:D5"; // Указываем диапазон данных для чтения
-        SpreadsheetsResource.ValuesResource.GetRequest request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
-
-        ValueRange response = request.Execute();
-        IList<IList<object>> values = response.Values;
-
-        if (values != null && values.Count > 0)
-        {
-            foreach (var row in values)
+            // Загрузка учетных данных сервисного аккаунта
+            using (var stream = new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
             {
-                Console.WriteLine(string.Join(", ", row)); // Вывод строк из таблицы
+                credential = GoogleCredential.FromStream(stream).CreateScoped(Scopes);
             }
+
+            // Создание службы Google Sheets API
+            _service = new SheetsService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = ApplicationName,
+            });
+
+            // Запись данных в Google Sheets
+            WriteToSheet("Hello World");
         }
-        else
+
+        private static void WriteToSheet(string value)
         {
-            Console.WriteLine("Нет данных.");
+            const string range = $"{SheetName}!E1";
+            
+            ValueRange valueRange = new ()
+            {
+                Values = new List<IList<object>> { new List<object> { value } }
+            };
+
+           UpdateRequest? updateRequest = _service?.Spreadsheets.Values.Update(valueRange, SpreadsheetId, range);
+
+           if (updateRequest != null)
+           {
+               updateRequest.ValueInputOption = UpdateRequest.ValueInputOptionEnum.RAW;
+               updateRequest.Execute();
+           }
+
+           Console.WriteLine("Updated cell E1 with 'Hello World'");
         }
-    }
-
-    static void WriteEntries()
-    {
-        var range = $"{SheetName}!A1"; // Указываем ячейку, с которой начнем запись
-        var valueRange = new ValueRange();
-
-        // Создаем данные для записи
-        var oblist = new List<IList<object>> { new List<object>() { "Hello", "World" } };
-        valueRange.Values = oblist;
-
-        var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
-        appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
-        var appendResponse = appendRequest.Execute();
     }
 }
+
+// Для работы с Google Sheets API вам нужно использовать учетные данные сервисного аккаунта. 
+//     Вот шаги для создания и использования учетных данных сервисного аккаунта:
+//
+// Создайте учетные данные сервисного аккаунта
+//     Перейдите в Google Cloud Console.
+//     Выберите ваш проект или создайте новый.
+//     Перейдите в раздел "API & Services" > "Credentials".
+//     Нажмите "Create credentials" и выберите "Service account".
+//     Заполните необходимые поля и нажмите "Create".
+//     На следующем шаге выберите роль "Editor" или "Owner" и нажмите "Continue".
+//     Нажмите "Done".
+//     В разделе "Service accounts" найдите созданный аккаунт и нажмите на кнопку "Manage keys".
+//     Нажмите "Add key" > "Create new key" и выберите формат JSON.
+//     Скачайте файл JSON и сохраните его в вашем проекте (например, service_account.json).
+//     Шаг 2: Обновите ваш код для использования учетных данных сервисного аккаунта
+//
+//     Предоставьте доступ сервисному аккаунту к таблице Google Sheets:
+//
+// Откройте таблицу Google Sheets в браузере.
+//     Нажмите на кнопку "Поделиться" (Share) в правом верхнем углу.
+//     Введите email сервисного аккаунта (например, gsapi2@graphical-balm-433408-i1.iam.gserviceaccount.com) в поле "Добавить людей и группы" (Add people and groups).
+//     Выберите роль "Редактор" (Editor) и нажмите "Отправить" (Send).
+//     Убедитесь, что ваш код корректен:
+//
+// Проверьте, что ваш код использует правильные учетные данные и имеет доступ к таблице.

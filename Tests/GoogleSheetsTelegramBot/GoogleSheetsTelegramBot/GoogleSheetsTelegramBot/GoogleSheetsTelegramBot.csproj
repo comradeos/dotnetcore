@@ -17,7 +17,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Include="bin\Debug\net8.0\secret.json" />
       <None Include="bin\Debug\net8.0\credentials.json" />
+      <None Include="bin\Debug\net8.0\service_account.json" />
     </ItemGroup>
 
 </Project>
