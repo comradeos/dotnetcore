@@ -1,10 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using Telegram.Bot;
-using Telegram.Bot.Polling;
-using Telegram.Bot.Types;
-using Telegram.Bot.Types.Enums;
-using Telegram.Bot.Exceptions;
-using Google.Apis.Auth.OAuth2;
+﻿using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
@@ -12,80 +6,12 @@ using static Google.Apis.Sheets.v4.SpreadsheetsResource.ValuesResource;
 
 namespace GoogleSheetsTelegramBot;
 
-internal static class Program
+public static class Program
 {
-    private static readonly string TgToken = "YOUR_TELEGRAM_BOT_TOKEN";
-
     private static void Main(string[] args)
     {
         GoogleSheetTest();
-        TelegramBotTest();
     }
-
-    private static void TelegramBotTest()
-    {
-        TelegramBotClient botClient = new(TgToken);
-        CancellationTokenSource cts = new();
-
-        // Start receiving updates
-        ReceiverOptions receiverOptions = new()
-        {
-            AllowedUpdates = [] // receive all update types
-        };
-
-        botClient.StartReceiving(
-            HandleUpdateAsync,
-            HandleErrorAsync,
-            receiverOptions,
-            cts.Token
-        );
-
-        Console.WriteLine("Running... Press Enter to terminate");
-        Console.ReadLine();
-    }
-
-    private static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
-    {
-        if (update.Type != UpdateType.Message || update.Message!.Type != MessageType.Text)
-            return;
-
-        string? messageText = update.Message.Text;
-        long chatId = update.Message.Chat.Id;
-        string chatTitle = update.Message.Chat.Title ?? "Личная переписка";
-        
-        HandleData();
-
-        Console.WriteLine($"Получено сообщение из чата '{chatTitle}' (ID: {chatId}): {messageText}");
-
-        if (messageText != null && Regex.IsMatch(messageText, @"\d"))
-        {
-            Console.WriteLine($"Сообщение, содержащее цифры: {messageText}");
-        }
-
-        // Echo the received message back to the user
-        await botClient.SendTextMessageAsync(chatId, $"Вы сказали: {messageText}", cancellationToken: cancellationToken);
-    }
-
-    private static Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
-    {
-        string errorMessage = exception switch
-        {
-            ApiRequestException apiRequestException => $"Telegram API Error:\n[{apiRequestException.ErrorCode}]\n{apiRequestException.Message}",
-            _ => exception.ToString()
-        };
-
-        Console.WriteLine(errorMessage);
-        return Task.CompletedTask;
-    }
-
-    private static void HandleData()
-    {
-        Console.WriteLine("Start handling data...");
-        Thread.Sleep(5000);
-        Console.WriteLine("Data handled!");
-    }
-    
-    
     
     private static readonly string[] Scopes = [SheetsService.Scope.Spreadsheets];
     private const string ApplicationName = "Google Sheets API .NET Quickstart";
@@ -165,4 +91,10 @@ internal static class Program
     //     Убедитесь, что ваш код корректен:
     //
     // Проверьте, что ваш код использует правильные учетные данные и имеет доступ к таблице.
+
+    private static void TelegramBotTest()
+    {
+        
+    }
 }
+
