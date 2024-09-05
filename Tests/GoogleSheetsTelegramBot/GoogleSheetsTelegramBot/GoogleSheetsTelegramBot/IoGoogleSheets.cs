@@ -1,4 +1,3 @@
-using System.Globalization;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
@@ -63,28 +62,28 @@ public class IoGoogleSheets
 
     public void Test()
     {
-        IList<IList<object>> rows = GetRowsWithSpecificValue("D", "AAA");
+        var dict = GetRowsByColumnValue("D", "F25");
         
-        foreach (var row in rows)
+        foreach (var (key, value) in dict)
         {
-              Console.WriteLine(row[6]);
+            Console.WriteLine($"Row {key}: {value[6]}");
         }
-       
-        Console.WriteLine($"Rows count: {rows.Count}");
+        
+        Console.WriteLine($"Rows count: {dict.Values.Count}");
 
         // GetLastFilledRow
         int n = GetLastFilledRow("E");
         Console.WriteLine($"Last filled row: {n}");
 
-        _ = Update("E", 30320, "AAA777");
-        // _ = Update("E", 30321, 412);
-        // _ = Update("E", 30322, 25.3);
+        _ = UpdateCell("E", 30320, "oOoOoOo");
+        // _ = UpdateCell("E", 30321, 412);
+        // _ = UpdateCell("E", 30322, 25.3);
         
-        // SetBackgroundColor
-        _ = SetBackgroundColor("E", 30320, "#8e7cc3");
+        // CellBackgroundColor
+        _ = CellBackgroundColor("E", 30320, "#ff00ff");
     }
 
-    public string? Update(string column, int row, object value)
+    public string? UpdateCell(string column, int row, object value)
     {
         string? error = null;
         
@@ -144,7 +143,7 @@ public class IoGoogleSheets
         return 0;
     }
     
-    public IList<IList<object>> GetRowsWithSpecificValue(string column, string value)
+    public Dictionary<int, IList<object>> GetRowsByColumnValue(string column, string value)
     {
         string range = $"{SheetName}!{column}:{column}";
         
@@ -155,10 +154,10 @@ public class IoGoogleSheets
 
         if (values == null || values.Count == 0)
         {
-            return new List<IList<object>>();
+            return new Dictionary<int, IList<object>>();
         }
-
-        IList<IList<object>> matchingRows = new List<IList<object>>();
+        
+        Dictionary<int, IList<object>> result = new(); 
 
         for (int i = 0; i < values.Count; i++)
         {
@@ -166,18 +165,19 @@ public class IoGoogleSheets
             {
                 continue;
             }
-            string rowRange = $"{SheetName}!A{i + 1}:Z{i + 1}"; // Предполагаем, что данные находятся в диапазоне A:Z
+            
+            string rowRange = $"{SheetName}!A{i + 1}:Z{i + 1}";
             
             GetRequest? rowRequest = _service?.Spreadsheets.Values.Get(SpreadsheetId, rowRange);
             ValueRange? rowResponse = rowRequest?.Execute();
             
             if (rowResponse?.Values is { Count: > 0 })
             {
-                matchingRows.Add(rowResponse.Values[0]);
+                result.Add(i + 1, rowResponse.Values[0]);
             }
         }
 
-        return matchingRows;
+        return result;
     }
     
     public IList<object> GetRowNumber(int row)
@@ -188,16 +188,14 @@ public class IoGoogleSheets
         return response?.Values?.FirstOrDefault() ?? new List<object>();
     }
 
-    public string? SetBackgroundColor(string column, int row, string hexColorCode)
+    public string? CellBackgroundColor(string column, int row, string hexColorCode)
     {
-        // Преобразуем hex-код цвета в RGB
-        var color = System.Drawing.ColorTranslator.FromHtml(hexColorCode);
+        System.Drawing.Color color = System.Drawing.ColorTranslator.FromHtml(hexColorCode);
 
-        // Преобразуем строку столбца в индекс (A -> 0, B -> 1, и т.д.)
         int columnIndex = column.ToUpper()[0] - 'A';
 
-        var requests = new List<Request>
-        {
+        List<Request> requests =
+        [
             new Request
             {
                 RepeatCell = new RepeatCellRequest
@@ -205,7 +203,7 @@ public class IoGoogleSheets
                     Range = new GridRange
                     {
                         SheetId = GetSheetId(SheetName),
-                        StartRowIndex = row - 1, // Google Sheets is 0-indexed
+                        StartRowIndex = row - 1,
                         EndRowIndex = row,
                         StartColumnIndex = columnIndex,
                         EndColumnIndex = columnIndex + 1
@@ -225,10 +223,11 @@ public class IoGoogleSheets
                     Fields = "userEnteredFormat.backgroundColor"
                 }
             }
-        };
+        ];
 
-        var batchUpdateRequest = new BatchUpdateSpreadsheetRequest { Requests = requests };
-        var response = _service?.Spreadsheets.BatchUpdate(batchUpdateRequest, SpreadsheetId).Execute();
+        BatchUpdateSpreadsheetRequest batchUpdateRequest = new() { Requests = requests };
+        BatchUpdateSpreadsheetResponse? response = _service?
+            .Spreadsheets.BatchUpdate(batchUpdateRequest, SpreadsheetId).Execute();
 
         return response != null ? "Background color set successfully" : "Failed to set background color";
     }
@@ -239,5 +238,4 @@ public class IoGoogleSheets
         Sheet? sheet = spreadsheet?.Sheets?.FirstOrDefault(s => s.Properties.Title == sheetName);
         return sheet?.Properties.SheetId ?? 0;
     }
-
 }

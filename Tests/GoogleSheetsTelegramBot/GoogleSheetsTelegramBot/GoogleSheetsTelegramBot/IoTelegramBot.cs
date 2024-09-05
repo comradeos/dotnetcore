@@ -9,15 +9,15 @@ namespace GoogleSheetsTelegramBot;
 
 public class IoTelegramBot
 {
-    private static readonly string TgToken = "";
+    public readonly string TgToken = "SECRET_API_TOKEN";
 
-    private static void TelegramBotTest()
+    public void Test()
     {
         TelegramBotClient botClient = new(TgToken);
         CancellationTokenSource cts = new();
         
         botClient.SendTextMessageAsync(
-            chatId: 1002209585239,
+            chatId: -1002209585239,
             text: "hey!", 
             cancellationToken: cts.Token
         );
@@ -39,7 +39,7 @@ public class IoTelegramBot
         Console.ReadLine();
     }
 
-    private static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
+    public async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
     {
         if (update.Type != UpdateType.Message || update.Message!.Type != MessageType.Text)
             return;
@@ -61,7 +61,7 @@ public class IoTelegramBot
         await botClient.SendTextMessageAsync(chatId, $"Вы сказали: {messageText}", cancellationToken: cancellationToken);
     }
 
-    private static Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
+    public Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
     {
         string errorMessage = exception switch
         {
@@ -73,14 +73,14 @@ public class IoTelegramBot
         return Task.CompletedTask;
     }
 
-    private static void HandleData()
+    public void HandleData()
     {
         Console.WriteLine("Start handling data...");
         // Thread.Sleep(5000);
         Console.WriteLine("Data handled!");
     }
     
-    private static void TelegramSingleMessage()
+    public void TelegramSingleMessage()
     {
         TelegramBotClient botClient = new(TgToken);
         CancellationTokenSource cts = new();

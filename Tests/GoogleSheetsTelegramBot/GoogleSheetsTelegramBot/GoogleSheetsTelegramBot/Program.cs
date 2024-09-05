@@ -9,6 +9,9 @@ internal static class Program
         IoGoogleSheets gs = new();
         gs.Test();
         
+        IoTelegramBot tg = new();
+        // tg.Test();
+        
         
         // WriteRandom();
         // TelegramBotTest();
