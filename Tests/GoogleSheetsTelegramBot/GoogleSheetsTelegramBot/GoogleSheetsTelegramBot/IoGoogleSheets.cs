@@ -62,25 +62,58 @@ public class IoGoogleSheets
 
     public void Test()
     {
-        var dict = GetRowsByColumnValue("D", "F25");
-        
-        foreach (var (key, value) in dict)
-        {
-            Console.WriteLine($"Row {key}: {value[6]}");
-        }
-        
-        Console.WriteLine($"Rows count: {dict.Values.Count}");
+        // Dictionary<int, IList<object>> rows = GetRowsByColumnValue("D", "F25");
+        // foreach ((int num, IList<object> row) in rows)
+        // {
+        //     Console.WriteLine($"Row {num}: {row[6]}");
+        // }
+        // Console.WriteLine($"Rows count: {rows.Values.Count}");
 
         // GetLastFilledRow
-        int n = GetLastFilledRow("E");
-        Console.WriteLine($"Last filled row: {n}");
+        // int n = GetLastFilledRow("E");
+        // Console.WriteLine($"Last filled row: {n}");
 
-        _ = UpdateCell("E", 30320, "oOoOoOo");
+        // _ = UpdateCell("E", 30320, "oOoOoOo");
         // _ = UpdateCell("E", 30321, 412);
         // _ = UpdateCell("E", 30322, 25.3);
         
         // CellBackgroundColor
-        _ = CellBackgroundColor("E", 30320, "#ff00ff");
+        // _ = CellBackgroundColor("E", 30320, "#ff00ff");
+
+        /*
+        int counter = 0;
+        int lastRowNum = 0;
+        while (true)
+        {
+            ++counter;
+            Thread.Sleep(5000);
+            
+            int lastRowNumUpd = GetLastNumberDayTimeFilledRow();
+            
+            if (lastRowNum != lastRowNumUpd)
+            {
+                lastRowNum = lastRowNumUpd;
+                Console.WriteLine($"Last row has been updated: {lastRowNum}");
+            }
+            
+            if (counter >= 120) break;
+        }
+        */
+        
+        Dictionary<int, object> newFilter = new()
+        {
+            { 0, "59" },         // A
+            { 1, "02.09.2024" }, // B
+            { 2, "10:07:42" },   // C
+            { 10, "Екіпаж 8" },  // K
+        };
+        
+        Dictionary<int, IList<object>> rows = GetRowsByFilter(newFilter);
+        Console.WriteLine(rows.Count);
+        foreach (KeyValuePair<int, IList<object>> row in rows)
+        {
+            Console.WriteLine($"Row {row.Key}: {row.Value[0]} {row.Value[1]} {row.Value[2]} {row.Value[10]}");
+        }
     }
 
     public string? UpdateCell(string column, int row, object value)
@@ -190,13 +223,15 @@ public class IoGoogleSheets
 
     public string? CellBackgroundColor(string column, int row, string hexColorCode)
     {
+        string? error = null;
+        
         System.Drawing.Color color = System.Drawing.ColorTranslator.FromHtml(hexColorCode);
 
         int columnIndex = column.ToUpper()[0] - 'A';
 
         List<Request> requests =
         [
-            new Request
+            new()
             {
                 RepeatCell = new RepeatCellRequest
                 {
@@ -226,16 +261,121 @@ public class IoGoogleSheets
         ];
 
         BatchUpdateSpreadsheetRequest batchUpdateRequest = new() { Requests = requests };
-        BatchUpdateSpreadsheetResponse? response = _service?
-            .Spreadsheets.BatchUpdate(batchUpdateRequest, SpreadsheetId).Execute();
 
-        return response != null ? "Background color set successfully" : "Failed to set background color";
+        try
+        {
+            BatchUpdateSpreadsheetResponse? response = _service?
+                .Spreadsheets.BatchUpdate(batchUpdateRequest, SpreadsheetId).Execute();
+            
+            Console.WriteLine($"Set background color {hexColorCode} for cell {column}{row}");
+        }
+        catch (Exception _)
+        {
+            error = "Unable to set background color";
+        }
+
+        return error;
     }
 
     private int GetSheetId(string sheetName)
     {
-        Spreadsheet? spreadsheet = _service?.Spreadsheets.Get(SpreadsheetId).Execute();
-        Sheet? sheet = spreadsheet?.Sheets?.FirstOrDefault(s => s.Properties.Title == sheetName);
+        Spreadsheet? spreadsheet = _service?
+            .Spreadsheets.Get(SpreadsheetId).Execute();
+        
+        Sheet? sheet = spreadsheet?
+            .Sheets?.FirstOrDefault(s => s.Properties.Title == sheetName);
+        
         return sheet?.Properties.SheetId ?? 0;
+    }
+    
+    public int GetLastNumberDayTimeFilledRow()
+    {
+        GetRequest? request = _service?.Spreadsheets.Values.Get(SpreadsheetId, $"{SheetName}!A:Z");
+        ValueRange? response;
+        
+        try
+        {
+            response = request?.Execute();
+        }
+        catch (Exception _)
+        {
+            return 0;
+        }
+        
+        IList<IList<object>>? values = response?.Values;
+
+        if (values == null || values.Count == 0)
+        {
+            return 0;
+        }
+
+        for (int i = values.Count - 1; i >= 0; i--)
+        {
+            if (values[i].Count <= 0
+                || string.IsNullOrEmpty(values[i][0].ToString())
+                || string.IsNullOrEmpty(values[i][1].ToString())
+                || string.IsNullOrEmpty(values[i][2].ToString()))
+            {
+                continue;
+            }
+            return i + 1;
+        }
+        return 0;
+    }
+
+    private readonly Dictionary<int, object> _filter = new()
+    {
+        { 0, "59" },         // A
+        { 1, "02.09.2024" }, // B
+        { 2, "10:07:42" },   // C
+        { 10, "Екіпаж 8" },  // K
+    };
+    
+    public Dictionary<int, IList<object>> GetRowsByFilter(Dictionary<int, object> filter)
+    {
+        GetRequest? request = _service?.Spreadsheets.Values.Get(SpreadsheetId, $"{SheetName}!A:Z");
+        ValueRange? response = request?.Execute();
+        
+        IList<IList<object>>? values = response?.Values;
+
+        if (values == null || values.Count == 0)
+        {
+            return new Dictionary<int, IList<object>>();
+        }
+        
+        Dictionary<int, IList<object>> result = new(); 
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            bool isMatch = true;
+            
+            foreach ((int key, object value) in filter)
+            {
+                if (values[i].Count > key && values[i][key].ToString() == value.ToString())
+                {
+                    continue;
+                }
+                
+                isMatch = false;
+                break;
+            }
+            
+            if (!isMatch)
+            {
+                continue;
+            }
+            
+            string rowRange = $"{SheetName}!A{i + 1}:Z{i + 1}";
+            
+            GetRequest? rowRequest = _service?.Spreadsheets.Values.Get(SpreadsheetId, rowRange);
+            ValueRange? rowResponse = rowRequest?.Execute();
+            
+            if (rowResponse?.Values is { Count: > 0 })
+            {
+                result.Add(i + 1, rowResponse.Values[0]);
+            }
+        }
+
+        return result;
     }
 }

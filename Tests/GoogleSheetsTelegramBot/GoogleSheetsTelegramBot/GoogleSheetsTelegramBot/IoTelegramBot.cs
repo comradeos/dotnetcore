@@ -11,42 +11,53 @@ public class IoTelegramBot
 {
     public readonly string TgToken = "SECRET_API_TOKEN";
 
+    // группы и исполнители
+    private Dictionary<long, List<string>> _groupPerformers = new()
+    {
+        {-4590477055, ["Нагорний"] },
+        {-4535485804, ["Моісеєнко"] },
+        {-4594391063, ["Поляков"] },
+    };
+    private const long CallCenterChatId = -4504928640;
+    // группы и исполнители
+    
+    private readonly TelegramBotClient _botClient;
+    private readonly CancellationTokenSource _cancellation = new();
+    
+    public IoTelegramBot()
+    {
+        _botClient = new TelegramBotClient(TgToken);
+    }
+    
     public void Test()
     {
-        TelegramBotClient botClient = new(TgToken);
-        CancellationTokenSource cts = new();
-        
-        botClient.SendTextMessageAsync(
-            chatId: -1002209585239,
-            text: "hey!", 
-            cancellationToken: cts.Token
-        );
-
-        // Start receiving updates
         ReceiverOptions receiverOptions = new()
         {
-            AllowedUpdates = [] // receive all update types
+            AllowedUpdates = []
         };
 
-        botClient.StartReceiving(
+        _botClient.StartReceiving(
             HandleUpdateAsync,
             HandleErrorAsync,
             receiverOptions,
-            cts.Token
+            _cancellation.Token
         );
 
         Console.WriteLine("Running... Press Enter to terminate");
         Console.ReadLine();
     }
 
-    public async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
+    private Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
     {
         if (update.Type != UpdateType.Message || update.Message!.Type != MessageType.Text)
-            return;
+        {
+            return Task.CompletedTask;
+        }
 
         string? messageText = update.Message.Text;
         long chatId = update.Message.Chat.Id;
         string chatTitle = update.Message.Chat.Title ?? "Личная переписка";
+        string? replyToMessage = update.Message.ReplyToMessage?.Text;
         
         HandleData();
 
@@ -57,11 +68,27 @@ public class IoTelegramBot
             Console.WriteLine($"Сообщение, содержащее цифры: {messageText}");
         }
 
+        if (chatId == CallCenterChatId)
+        {
+            return Task.CompletedTask;
+        }
+
+        string author = $"{update.Message.From?.FirstName} {update.Message.From?.LastName}";
+        
+        if (!string.IsNullOrEmpty(replyToMessage)) 
+        {
+            author = $"{author}: {messageText} (У відповідь на: '{replyToMessage}')";
+        }
+        
+        SendToCallCentre(author, messageText);
+
+        return Task.CompletedTask;
+
         // Echo the received message back to the user
-        await botClient.SendTextMessageAsync(chatId, $"Вы сказали: {messageText}", cancellationToken: cancellationToken);
+        // await botClient.SendTextMessageAsync(chatId, $"Вы сказали: {messageText}", cancellationToken: cancellationToken);
     }
 
-    public Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
+    private static Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
     {
         string errorMessage = exception switch
         {
@@ -73,34 +100,31 @@ public class IoTelegramBot
         return Task.CompletedTask;
     }
 
-    public void HandleData()
+    private static void HandleData()
     {
         Console.WriteLine("Start handling data...");
         // Thread.Sleep(5000);
         Console.WriteLine("Data handled!");
     }
     
-    public void TelegramSingleMessage()
+    private void SendToCallCentre(string? author, string? messageText)
     {
-        TelegramBotClient botClient = new(TgToken);
-        CancellationTokenSource cts = new();
+        if (author == null || messageText == null)
+        {
+            return;
+        }
         
         try
         {
-            var message = botClient.SendTextMessageAsync(
-                chatId: -1002209585239,
-                text: "hey223!",
-                cancellationToken: cts.Token
+            Message _ = _botClient.SendTextMessageAsync(
+                chatId: CallCenterChatId,
+                text: $"{author}: {messageText}",
+                cancellationToken: _cancellation.Token
             ).GetAwaiter().GetResult();
-
-            Console.WriteLine($"Message sent: {message.Text}");
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
-        
-        Console.WriteLine("done");
     }
-    
 }
