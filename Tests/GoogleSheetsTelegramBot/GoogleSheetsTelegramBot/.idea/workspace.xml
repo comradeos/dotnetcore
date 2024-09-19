@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa8305e-6479-4783-96a2-94d33e9ba70e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/GoogleSheetsTelegramBot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GoogleSheetsTelegramBot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoogleSheetsTelegramBot/IoTelegramBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GoogleSheetsTelegramBot/IoTelegramBot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,22 +12,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2lYuJ5JUBwLLub7P0F6KbeyGnDm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -44,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725369256801</updated>
       <workItem from="1725369258206" duration="1000" />
+      <workItem from="1725825033243" duration="19000" />
     </task>
     <servers />
   </component>

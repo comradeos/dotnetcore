@@ -32,14 +32,13 @@ public class IoGoogleSheets
     //     Введите email сервисного аккаунта (например, gsapi2@graphical-balm-433408-i1.iam.gserviceaccount.com) в поле "Добавить людей и группы" (Add people and groups).
     //     Выберите роль "Редактор" (Editor) и нажмите "Отправить" (Send).
     //     Убедитесь, что ваш код корректен:
-
-    
+  
     private readonly string[] _scopes = [SheetsService.Scope.Spreadsheets];
     private const string ApplicationName = "Google Sheets API .NET Quickstart";
     
     // Copy of Журнал дзвінків на 2024 рік 
     private const string SpreadsheetId = "1E53bygPrEP_57mx_zVEFnGUr26Aou9_NCOHV7X9MBfA";
-    private const string SheetName = "Журнал ЗАЯВОК"; // "Лист32";
+    private const string SheetName = "Журнал ЗАЯВОК 2"; // "Лист32";
     private readonly SheetsService? _service;
     
     public IoGoogleSheets()
@@ -49,8 +48,9 @@ public class IoGoogleSheets
         // Загрузка учетных данных сервисного аккаунта
         using (FileStream stream = new("paymaxsheets.json", FileMode.Open, FileAccess.Read)) // "credentials.json"
         {
-            credential = GoogleCredential.FromStream(stream).CreateScoped(_scopes);
+        credential = GoogleCredential.FromStream(stream).CreateScoped(_scopes);
         }
+        // credential = GoogleCredential.FromJson(json).CreateScoped(_scopes);
 
         // Создание службы Google Sheets API
         _service = new SheetsService(new BaseClientService.Initializer()
@@ -105,7 +105,7 @@ public class IoGoogleSheets
             { 0, "59" },         // A
             { 1, "02.09.2024" }, // B
             { 2, "10:07:42" },   // C
-            { 10, "Екіпаж 8" },  // K
+            { 10, "Екіпаж 8ф" },  // K
         };
         
         Dictionary<int, IList<object>> rows = GetRowsByFilter(newFilter);
@@ -114,6 +114,13 @@ public class IoGoogleSheets
         {
             Console.WriteLine($"Row {row.Key}: {row.Value[0]} {row.Value[1]} {row.Value[2]} {row.Value[10]}");
         }
+        
+        int r = new Random().Next(10, 99);
+        UpdateCell("E", 30325, $"тест {r}");
+        CellBackgroundColor("E", 30325, $"#{r}{r}{r}");
+        
+        string? color = GetCellBackgroundColor("E", 30326);
+        Console.WriteLine($"Color: {color} ({string.IsNullOrEmpty(color)})");
     }
 
     public string? UpdateCell(string column, int row, object value)
@@ -264,8 +271,8 @@ public class IoGoogleSheets
 
         try
         {
-            BatchUpdateSpreadsheetResponse? response = _service?
-                .Spreadsheets.BatchUpdate(batchUpdateRequest, SpreadsheetId).Execute();
+            BatchUpdateSpreadsheetResponse? _ = _service?.Spreadsheets
+                .BatchUpdate(batchUpdateRequest, SpreadsheetId).Execute();
             
             Console.WriteLine($"Set background color {hexColorCode} for cell {column}{row}");
         }
@@ -377,5 +384,40 @@ public class IoGoogleSheets
         }
 
         return result;
+    }
+    
+    
+    public string? GetCellBackgroundColor(string column, int row)
+    {
+        SpreadsheetsResource.GetRequest? request = _service?.Spreadsheets.Get(SpreadsheetId);
+
+        if (request == null)
+        {
+            return null;
+        }
+            
+        request.Ranges = new List<string> { $"{SheetName}!{column}{row}:{column}{row}" };
+        request.IncludeGridData = true;
+        
+        try
+        {
+            Spreadsheet response = request.Execute();
+            CellData cellData = response.Sheets[0].Data[0].RowData[0].Values[0];
+
+            if (cellData.UserEnteredFormat?.BackgroundColor == null) return null;
+            
+            Color? color = cellData.UserEnteredFormat.BackgroundColor;
+            
+            int red = (int)(color.Red * 255 ?? 0);
+            int green = (int)(color.Green * 255 ?? 0);
+            int blue = (int)(color.Blue * 255 ?? 0);
+
+            return $"#{red:X2}{green:X2}{blue:X2}";
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error getting cell background color: {ex.Message}");
+            return null;
+        }
     }
 }
