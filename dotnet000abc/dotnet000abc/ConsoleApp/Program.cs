@@ -26,7 +26,8 @@ public static class Program
         // AsyncLocalTest.Test();
         // DictionaryJsonEncode.Test();
         // IntDecimal.Test();
-        TestController.Test();
+        // TestController.Test();
+        SplitList.Test();
         
     }   
 }
