@@ -9,8 +9,7 @@ namespace GoogleSheetsTelegramBot;
 
 public class IoTelegramBot
 {
-    public readonly string TgToken = "7447477377:AAGXpaUY4vbZaelgqF9ssr0sWy2MC_2dsQ8";
-    // public readonly string TgToken = "SECRET_API_TOKEN";
+    public readonly string TgToken = "SECRET_API_TOKEN";
 
     // группы и исполнители
     private Dictionary<long, List<string>> _groupPerformers = new()
