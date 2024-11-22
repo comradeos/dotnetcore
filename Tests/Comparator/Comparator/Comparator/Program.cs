@@ -27,10 +27,6 @@ public static class Program
         ParseRtf(file2);
         
         ParsePdf(file3);
-
-        
-        
-        
     }
     
     private static void ParseDocx(string file)
@@ -74,7 +70,7 @@ public static class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Ошибка при чтении документа: {ex.Message}");
+            Console.WriteLine($"Ошибка ParseRtf: {ex.Message}");
         }
     }
     
@@ -93,7 +89,7 @@ public static class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Ошибка при чтении PDF: {ex.Message}");
+            Console.WriteLine($"Ошибка ParsePdf: {ex.Message}");
         }
     }
     
