@@ -1,4 +1,6 @@
-﻿namespace  ConsoleApp;
+﻿using ConsoleApp.Tests;
+
+namespace  ConsoleApp;
 
 using Modules;
 using Patterns;
@@ -27,7 +29,8 @@ public static class Program
         // DictionaryJsonEncode.Test();
         // IntDecimal.Test();
         // TestController.Test();
-        SplitList.Test();
+        // SplitList.Test();
+        Attributes.Test();
         
     }   
 }
