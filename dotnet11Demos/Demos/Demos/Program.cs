@@ -7,6 +7,11 @@ internal static class Program
         // Abstraction.Demo();
         // Encapsulation.Demo();
 	    // Inheritance.Demo();
-        Polymorphism.Demo();
+        //Polymorphism.Demo();
+        //SRP.Demo();
+        //OCP.Demo();
+        // LSP.Demo();
+        // ISP.Demo();
+        DIP.Demo();
     }
 }
