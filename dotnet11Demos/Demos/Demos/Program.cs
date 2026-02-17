@@ -12,6 +12,7 @@ internal static class Program
         //OCP.Demo();
         // LSP.Demo();
         // ISP.Demo();
-        DIP.Demo();
+        // DIP.Demo();
+        ClassAttributes.Demo();
     }
 }
