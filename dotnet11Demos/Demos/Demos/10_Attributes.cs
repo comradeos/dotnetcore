@@ -22,7 +22,7 @@ class MyCustomValueAttribute : Attribute
     }
 }
 
-// [MyCustomNoValue]
+[MyCustomNoValue]
 [MyCustomValue("Hello, World!")]
 class MyClass
 {
